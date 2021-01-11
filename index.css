@@ -1,0 +1,29 @@
+body {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 48px;
+  align-items: center;
+}
+
+nav li {
+  background-color: #528080;
+  padding: 16px;
+  height: 16px;
+  margin-left: 2px;
+}
+
+.logo {
+  height: 48px;
+  flex: end;
+}
