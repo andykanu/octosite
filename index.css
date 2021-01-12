@@ -17,7 +17,7 @@ nav ul {
 }
 
 nav li {
-  background-color: #528080;
+  background-color: indianred;
   padding: 16px;
   height: 16px;
   margin-left: 2px;
@@ -26,4 +26,40 @@ nav li {
 .logo {
   height: 48px;
   flex: end;
+}
+
+h1,
+h2 {
+  color: indianred;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#example {
+  margin: 16px 0;
+  padding-left: 16px;
+}
+
+#example-head {
+  padding: 16px 0;
+}
+
+.semi-transparent {
+  opacity: 0.5;
+  color: gray;
+}
+
+#declaration {
+  width: 20%;
+}
+
+.cheat-sheet {
+  text-align: center;
+  border: 1px gray solid;
+  margin: 32px auto;
+}
+
+.cheat-table-head {
+  background-color: indianred;
+  color: white;
 }
