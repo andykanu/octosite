@@ -49,6 +49,50 @@
         <th>Description</th>
         <th>Use</th>
       </thead>
+      <tr>
+        <td>* {}</td>
+        <td>Universal selector</td>
+        <td>Applies to all elements in the document</td>
+      </tr>
+      <tr>
+        <td>h1, h2 {}</td>
+        <td>Type selector</td>
+        <td>Matches element names</td>
+      </tr>
+      <tr>
+        <td>.class {} &nbsp;p.class {}</td>
+        <td>Class selector</td>
+        <td>Matches an element whose class attribute matches that after the period<br />
+          If there is an element before the period, matches only those elements with that class
+        </td>
+      </tr>
+      <tr>
+        <td>#id {}</td>
+        <td>ID selector</td>
+        <td>Matches an element whose ID matches that after the #</td>
+      </tr>
+      <tr>
+        <td>li>a {}</td>
+        <td>Child selector</td>
+        <td>Matches an element that is a direct child of another</td>
+      </tr>
+      <tr>
+        <td>li a {}</td>
+        <td>Descendant selector</td>
+        <td>Matches an element that sits inside another element, even if other elements nested between them</td>
+      </tr>
+      <tr>
+        <td>h1+p {}</td>
+        <td>Adjacent sibling selector</td>
+        <td>Matches an element that is the next sibling of another (first &lt;p&gt; after any &lt;h1&gt; element)
+        </td>
+      </tr>
+      <tr>
+        <td>h1~p {}</td>
+        <td>General sibling selector</td>
+        <td>Matches an element that is a sibling of another (would apply to all &lt;p&gt; elements that are siblings of an &lt;h1&gt; element</td>
+      </tr>
     </table>
+    <footer>Based on <em>HTML & CSS design and build websites</em> by Jon Duckett</footer>
   </body>
 </html>
