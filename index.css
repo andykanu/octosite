@@ -70,6 +70,23 @@ h2 {
   border: 1px solid gray;
 }
 
+.code {
+  background-color: rgba(128, 128, 128, 0.5);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.firstcol {
+  width: 15%;
+}
+
+.midcol {
+  width: 20%;
+}
+
+.lastcol {
+  width: 65%;
+}
+
 footer {
   text-align: right;
   font-size: 12px;

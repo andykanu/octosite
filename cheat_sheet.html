@@ -29,15 +29,15 @@
         <thead>
           <th id = "example-head">Example</th>
         <tr>
-          <td>p {</td>
+          <td><span class = "code">p {</span></td>
             <td><span class = "semi-transparent"><-- selector</span></td>
         </tr>
         <tr>
-          <td id = "declaration">color: red;</td>
+          <td id = "declaration"><span class = "code">color: red;</span></td>
           <td><span class="semi-transparent"><--declaration, made up of property (color) : value (red)</span></td>
         </tr>
           <tr>
-            <td>}</td>
+            <td><span class = "code">}</span></td>
           </tr> 
       </table>
       <hr class = "semi-transparent" />
@@ -45,50 +45,50 @@
     <h2 class = "contents-heading">Reference</h2>
     <table class = "cheat-sheet">
       <thead class = "cheat-table-head">
-        <th>Selector</th>
-        <th>Description</th>
-        <th>Use</th>
+        <th class = "firstcol">Selector</th>
+        <th class = "midcol">Description</th>
+        <th class = "lastcol">Use</th>
       </thead>
       <tr>
-        <td>* {}</td>
+        <td><span class = "code">* {}</span></td>
         <td>Universal selector</td>
         <td>Applies to all elements in the document</td>
       </tr>
       <tr>
-        <td>h1, h2 {}</td>
+        <td><span class = "code">h1, h2 {}</span></td>
         <td>Type selector</td>
         <td>Matches element names</td>
       </tr>
       <tr>
-        <td>.class {} &nbsp;p.class {}</td>
+        <td><span class = "code">.class {} <br />p.class {}</span></td>
         <td>Class selector</td>
         <td>Matches an element whose class attribute matches that after the period<br />
           If there is an element before the period, matches only those elements with that class
         </td>
       </tr>
       <tr>
-        <td>#id {}</td>
+        <td><span class = "code">#id {}</span></td>
         <td>ID selector</td>
         <td>Matches an element whose ID matches that after the #</td>
       </tr>
       <tr>
-        <td>li>a {}</td>
+        <td><span class = "code">li>a {}</span></td>
         <td>Child selector</td>
         <td>Matches an element that is a direct child of another</td>
       </tr>
       <tr>
-        <td>li a {}</td>
+        <td><span class = "code">li a {}</span></td>
         <td>Descendant selector</td>
         <td>Matches an element that sits inside another element, even if other elements nested between them</td>
       </tr>
       <tr>
-        <td>h1+p {}</td>
+        <td><span class = "code">h1+p {}</span></td>
         <td>Adjacent sibling selector</td>
         <td>Matches an element that is the next sibling of another (first &lt;p&gt; after any &lt;h1&gt; element)
         </td>
       </tr>
       <tr>
-        <td>h1~p {}</td>
+        <td><span class = "code">h1~p {}</span></td>
         <td>General sibling selector</td>
         <td>Matches an element that is a sibling of another (would apply to all &lt;p&gt; elements that are siblings of an &lt;h1&gt; element</td>
       </tr>
