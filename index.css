@@ -59,6 +59,7 @@ h2 {
   border: 1px gray solid;
   max-width: 70%;
   margin: 0 auto;
+  border-collapse: collapse;
 }
 
 .cheat-table-head {
@@ -68,6 +69,7 @@ h2 {
 
 .cheat-sheet td {
   border: 1px solid gray;
+  padding: 8px 0;
 }
 
 .code {
