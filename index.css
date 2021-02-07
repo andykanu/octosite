@@ -69,7 +69,7 @@ h2 {
 
 .cheat-sheet td {
   border: 1px solid gray;
-  padding: 8px 0;
+  padding: 12px 0;
 }
 
 .code {
@@ -93,4 +93,8 @@ footer {
   text-align: right;
   font-size: 12px;
   color: gray;
+}
+
+br {
+  margin-bottom: 8px;
 }
