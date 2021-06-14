@@ -5,90 +5,133 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
-  <header>
-      <img src="images/headerLogo.png" alt="site header image" id="site-header"/>
+    <header>
+      <img
+        src="images/headerLogo.png"
+        alt="site header image"
+        id="site-header"
+      />
       <nav>
         <ul>
           <li><strong>About</strong></li>
           <li><strong>Blog</strong></li>
-          <a href="https://github.com/andykanu?tab=repositories" target="_blank"><li><strong>Projects</strong></li></a>
-        </ul>   
+          <li><strong>Projects</strong></li>
+        </ul>
       </nav>
-    </header> 
-    <section class = title">
+    </header>
+
+    <section class="title">
       <h1>CSS selectors</h1>
     </section>
     <section class="leading-paragraphs">
-      <p>There are many types of CSS selectors that enable you to format elements in an HTML document to various levels of specifity.</p>
-      <p>Selectors are followed by { } which contain the declarations which are made of a Property: Value pair</p>
-      <table id = "example">
-        <thead>
-          <th id = "example-head">Example</th>
-        <tr>
-          <td><span class = "code">p {</span></td>
-            <td><span class = "semi-transparent"><-- selector</span></td>
-        </tr>
-        <tr>
-          <td id = "declaration"><span class = "code">color: red;</span></td>
-          <td><span class="semi-transparent"><--declaration, made up of property (color) : value (red)</span></td>
-        </tr>
-          <tr>
-            <td><span class = "code">}</span></td>
-          </tr> 
-      </table>
-      <hr class = "semi-transparent" />
-    </section class = 'main-contents'>
-    <h2 class = "contents-heading">Reference</h2>
-    <table class = "cheat-sheet">
-      <thead class = "cheat-table-head">
-        <th class = "firstcol">Selector</th>
-        <th class = "midcol">Description</th>
-        <th class = "lastcol">Use</th>
+      <p>
+        There are many types of CSS selectors that enable you to format elements
+        in an HTML document to various levels of specifity.
+      </p>
+      <p>
+        Selectors are followed by { } which contain the declarations which are
+        made of a Property: Value pair
+      </p>
+    </section>
+    <table id="example">
+      <thead>
+        <th id="example-head">Example</th>
       </thead>
       <tr>
-        <td><span class = "code">* {}</span></td>
-        <td>Universal selector</td>
-        <td>Applies to all elements in the document</td>
+        <td><span class="code">p {</span></td>
+        <td><span class="semi-transparent"><-- selector</span></td>
       </tr>
       <tr>
-        <td><span class = "code">h1, h2 {}</span></td>
-        <td>Type selector</td>
-        <td>Matches element names</td>
-      </tr>
-      <tr>
-        <td><span class = "code">.class {} <br />p.class {}</span></td>
-        <td>Class selector</td>
-        <td>Matches an element whose class attribute matches that after the period<br />
-          If there is an element before the period, matches only those elements with that class
+        <td id="declaration"><span class="code">color: red;</span></td>
+        <td>
+          <span class="semi-transparent"
+            ><--declaration, made up of property (color) : value (red)</span
+          >
         </td>
       </tr>
       <tr>
-        <td><span class = "code">#id {}</span></td>
-        <td>ID selector</td>
-        <td>Matches an element whose ID matches that after the #</td>
-      </tr>
-      <tr>
-        <td><span class = "code">li>a {}</span></td>
-        <td>Child selector</td>
-        <td>Matches an element that is a direct child of another</td>
-      </tr>
-      <tr>
-        <td><span class = "code">li a {}</span></td>
-        <td>Descendant selector</td>
-        <td>Matches an element that sits inside another element, even if other elements nested between them</td>
-      </tr>
-      <tr>
-        <td><span class = "code">h1+p {}</span></td>
-        <td>Adjacent sibling selector</td>
-        <td>Matches an element that is the next sibling of another (first &lt;p&gt; after any &lt;h1&gt; element)
-        </td>
-      </tr>
-      <tr>
-        <td><span class = "code">h1~p {}</span></td>
-        <td>General sibling selector</td>
-        <td>Matches an element that is a sibling of another (would apply to all &lt;p&gt; elements that are siblings of an &lt;h1&gt; element</td>
+        <td><span class="code">}</span></td>
       </tr>
     </table>
-    <footer>Based on <em>HTML & CSS design and build websites</em> by Jon Duckett</footer>
+    <hr class="semi-transparent" />
+    <section class="main-contents">
+      <h2 class="contents-heading">Reference</h2>
+      <table class="cheat-sheet">
+        <thead class="cheat-table-head">
+          <th class="firstcol">Selector</th>
+          <th class="midcol">Description</th>
+          <th class="lastcol">Use</th>
+        </thead>
+        <tr>
+          <td><span class="code">* {}</span></td>
+          <td>Universal selector</td>
+          <td>Applies to all elements in the document</td>
+        </tr>
+        <tr>
+          <td><span class="code">h1, h2 {}</span></td>
+          <td>Type selector</td>
+          <td>Matches element names</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="code">.class {} <br />p.class {}</span>
+          </td>
+          <td>Class selector</td>
+          <td>
+            Matches an element whose class attribute matches that after the
+            period<br />
+            If there is an element before the period, matches only those
+            elements with that class
+          </td>
+        </tr>
+        <tr>
+          <td><span class="code">#id {}</span></td>
+          <td>ID selector</td>
+          <td>Matches an element whose ID matches that after the #</td>
+        </tr>
+        <tr>
+          <td><span class="code">li>a {}</span></td>
+          <td>Child selector</td>
+          <td>Matches an element that is a direct child of another</td>
+        </tr>
+        <tr>
+          <td><span class="code">li a {}</span></td>
+          <td>Descendant selector</td>
+          <td>
+            Matches an element that sits inside another element, even if other
+            elements nested between them
+          </td>
+        </tr>
+        <tr>
+          <td><span class="code">h1+p {}</span></td>
+          <td>Adjacent sibling selector</td>
+          <td>
+            Matches an element that is the next sibling of another (first
+            &lt;p&gt; after any &lt;h1&gt; element)
+          </td>
+        </tr>
+        <tr>
+          <td><span class="code">h1~p {}</span></td>
+          <td>General sibling selector</td>
+          <td>
+            Matches an element that is a sibling of another (would apply to all
+            &lt;p&gt; elements that are siblings of an &lt;h1&gt; element
+          </td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <div>
+        <a href="https://github.com/andykanu?tab=repositories" target="_blank"
+          ><img
+            src="images/GitHub-Mark-Light-120px-plus.png"
+            alt="Github logo"
+            id="githubLogo"
+        /></a>
+      </div>
+      <div id="basedOn">
+        Based on <em>HTML & CSS design and build websites</em> by Jon Duckett
+      </div>
+    </footer>
   </body>
 </html>

@@ -106,11 +106,30 @@ h2 {
 }
 
 footer {
-  text-align: right;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.75rem;
-  color: gray;
+  color: white;
+  background-color: rgb(234, 104, 41);
+  height: 3rem;
 }
 
 br {
   margin-bottom: 0.5rem;
+}
+
+#githubLogo {
+  height: 1.5rem;
+  width: auto;
+  margin-left: 1rem;
+}
+#basedOn {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+}
+
+footer em {
+  font-size: 0.75rem;
 }
