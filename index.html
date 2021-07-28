@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="shortcut icon" href="resources/images/navbarLogo.png" />
+    <title>Octoshark - Home</title>
+  </head>
+  <body>
+    <!--Site header-->
+    <header class="orange">
+      <!--Image at top of screen-->
+      <img
+        src="resources/images/siteHeader.png"
+        alt="site header"
+        id="site-header"
+      />
+      <!--Navigation bar-->
+      <nav id="navbar">
+        <ul class="orange">
+          <li id="navLogo">
+            <a href="index.html"
+              ><img
+                src="resources/images/navbarLogo.png"
+                class="stickyLogo"
+                alt="link to homepage"
+            /></a>
+          </li>
+          <li id="navHomeIcon">
+            <a href="index.html"
+              ><img
+                src="resources/images/Homeicon.png"
+                class="home-icon"
+                alt="link to homepage"
+            /></a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link"><strong>About</strong></a>
+          </li>
+          <li>
+            <a href="article-index.html" class="nav-link"
+              ><strong>Articles</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Page title-->
+    <section class="title"><h1>Welcome</h1></section>
+    <section class="main-welcome">
+      <div class="left-column">
+        <section class="lightbox">
+          <h2>What you'll find here</h2>
+          <p>
+            Articles about technology, design, product management, as well as
+            opinion pieces about things I find interesting.
+          </p>
+        </section>
+      </div>
+      <!--Right-hand column-->
+      <div class="right-column">
+        <a
+          href="https://medium.com/workhuman-technology-product/building-an-award-winning-application-in-just-four-months-6ff430dac585"
+          target="_blank"
+        >
+          <section class="lightbox">
+            <h2>
+              Building an award-winning application in 4 months
+              <em><u>28 Jul 2021</u></em>
+            </h2>
+            <p>
+              The story behind the rapid development of
+              <em
+                ><a
+                  href="https://moodtracker.workhuman.com"
+                  class="about-link"
+                  title="Moodtracker by Workhuman"
+                  target="_blank"
+                  >Moodtracker</a
+                ></em
+              >.
+            </p>
+          </section>
+        </a>
+        <!--space between-->
+        <div class="space-between"></div>
+        <a href="articles/cheat-sheet.html">
+          <section class="lightbox">
+            <h2>
+              CSS Selectors <em><u>16 Jun 2021</u></em>
+            </h2>
+            <p>A short guide to CSS selectors and specifity.</p>
+          </section>
+        </a>
+      </div>
+    </section>
+
+    <footer class="orange">
+      <div>
+        <a href="https://github.com/andykanu?tab=repositories" target="_blank"
+          ><img
+            src="resources/images/GitHub-Mark-Light-120px-plus.png"
+            alt="Github logo"
+            class="logo"
+        /></a>
+        <a href="https://www.linkedin.com/in/andrew-keogh-ie/" target="_blank"
+          ><img
+            src="resources/images/LI-In-Bug.png"
+            alt="LinkedIn logo"
+            class="logo"
+        /></a>
+      </div>
+      <div class="copyright" id="orange">&copy; 2021 Octoshark Ltd</div>
+    </footer>
+  </body>
+  <script src="resources/scripts/sticky-navbar.js"></script>
+</html>

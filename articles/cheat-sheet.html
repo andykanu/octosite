@@ -1,26 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link rel="shortcut icon" href="../resources/images/navbarLogo.png" />
+    <title>CSS Selectors - A Guide</title>
   </head>
   <body>
-    <header>
-      <img
-        src="images/headerLogo.png"
-        alt="site header image"
-        id="site-header"
-      />
-      <nav>
-        <ul>
-          <li><strong>About</strong></li>
-          <li><strong>Blog</strong></li>
-          <li><strong>Projects</strong></li>
+    <header class="orange">
+      <nav class="navOtherPages">
+        <ul class="orange">
+          <li id="navLogo">
+            <a href="../index.html"
+              ><img src="../resources/images/navbarLogo.png" class="stickyLogo" alt="link to homepage"
+            /></a>
+          </li>
+          <li id="navHomeIcon">
+            <a href="../index.html"
+              ><img src="../resources/images/Homeicon.png" class="home-icon" alt="link to homepage"
+            /></a>
+          
+          <li>
+            <a href="../about.html" class="nav-link"><strong>About</strong></a>
+          </li>
+        </li>
+        <a href="../article-index.html" class="nav-link"
+          ><strong>Articles</strong></a
+        >
+      </li>
         </ul>
       </nav>
     </header>
 
-    <section class="title">
+    <section class="titleOther">
       <h1>CSS selectors</h1>
     </section>
     <section class="leading-paragraphs">
@@ -33,9 +50,10 @@
         made of a Property: Value pair
       </p>
     </section>
-    <table id="example">
+    <section id="example">
+    <h2 id="example-head">Example</h2>
+    <table id="example_table">
       <thead>
-        <th id="example-head">Example</th>
       </thead>
       <tr>
         <td><span class="code">p {</span></td>
@@ -53,11 +71,12 @@
         <td><span class="code">}</span></td>
       </tr>
     </table>
+  </section>
     <hr class="semi-transparent" />
     <section class="main-contents">
       <h2 class="contents-heading">Reference</h2>
       <table class="cheat-sheet">
-        <thead class="cheat-table-head">
+        <thead class="orange">
           <th class="firstcol">Selector</th>
           <th class="midcol">Description</th>
           <th class="lastcol">Use</th>
@@ -120,18 +139,26 @@
         </tr>
       </table>
     </section>
-    <footer>
+    <footer class="orange">
       <div>
         <a href="https://github.com/andykanu?tab=repositories" target="_blank"
           ><img
-            src="images/GitHub-Mark-Light-120px-plus.png"
+            src="../resources/images/GitHub-Mark-Light-120px-plus.png"
             alt="Github logo"
-            id="githubLogo"
+            class="logo"
+        /></a>
+        <a href="https://www.linkedin.com/in/andrew-keogh-ie/" target="_blank"
+          ><img
+            src="../resources/images/LI-In-Bug.png"
+            alt="LinkedIn logo"
+            class="logo"
         /></a>
       </div>
       <div id="basedOn">
         Based on <em>HTML & CSS design and build websites</em> by Jon Duckett
       </div>
     </footer>
+    <div class="copyright">&copy; 2021 Octoshark Ltd</div>
   </body>
+  <script src="../resources/scripts/whiteHomeIcon.js"></script>
 </html>
