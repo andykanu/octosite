@@ -347,6 +347,11 @@ em u {
   float: left;
   width: 60%;
 }
+#panda-cycle::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /*Desktop styles specifically*/
 @media screen and (min-width: 50rem) {
