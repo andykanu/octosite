@@ -1,8 +1,8 @@
 /*Styles used in multiple pages*/
 
 :root {
-  --orange: #ea6a2a;
-  --lightorange: hsla(20, 82%, 54%, 0.5);
+  --orange: #988116;
+  --lightorange: hsla(49, 75%, 34%, 0.5);
   --text: #2b0000;
   --black: #353535;
   --linktext: hsla(286, 92%, 32%, 1);
@@ -30,6 +30,8 @@ body {
 #site-header {
   display: none;
 }
+
+
 /*Navbar setttings */
 a,
 nav ul a {
@@ -115,6 +117,49 @@ section {
   margin: 0 2rem;
 }
 
+/* images settings*/
+.zoom-within-container {
+    height: auto; 
+    overflow: scroll;
+    scrollbar-width: none;
+    
+  }
+  .zoom-within-container::-webkit-scrollbar { 
+    display: none;  /* Hides scrollbar in Safari and Chrome */
+}
+  .zoom-within-container img {
+    transition: width .5s ease;
+    }
+  .zoom-within-container img:hover {
+    transition: width .5s ease;
+    width: 150%;
+    height: auto; 
+  }
+
+
+figcaption {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+/*Large images */
+.large-image {
+  width: 100%;
+  height: auto;
+}
+
+.float-left {
+  float: left;
+  width: 33%;
+  height: auto;
+  margin-right: 2rem;
+}
+.float-right {
+  float: right;
+  width: 20%;
+  
+}
 /* Text & typography */
 h1 {
   color: var(--orange);
@@ -122,28 +167,51 @@ h1 {
   font-size: 2.5rem;
   margin: 4rem 0 2rem 0;
 }
-h2,
+h2,h3,
 p {
   color: var(--text);
+  margin: 2rem 0;
 }
 
 h1,
-h2 {
+h2, h3 {
   font-family: "Raleway", Sans-Serif;
 }
 
 h2 {
   font-size: 1.5rem;
 }
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
 
 .contents-heading {
   text-align: center;
 }
 
+aside {
+  background-color: var(--lightorange);
+  padding: 1rem 2rem;
+  color: var(--white);
+  margin-bottom: -1rem;
+ 
+}
+
+.step h5, p, ul, aside {
+  margin: 1rem;
+}
+
 /*Footer */
 
 footer {
-  margin-top: 2rem;
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,81 +283,24 @@ em u {
   font-size: 0.8rem;
 }
 
-/* For cheat sheet only */
-#example {
-  margin: 1rem 0;
-  padding-left: 1rem;
-}
-
-#example-head {
-  padding: 1rem 0;
-}
-
-.semi-transparent {
-  opacity: 0.5;
-  color: var(--grey);
-}
-
-#declaration {
-  width: 20%;
-}
-
-.cheat-sheet {
-  text-align: center;
-  border: 0.062rem solid var(--grey);
-  max-width: 70%;
-  margin: 0 auto;
-  border-collapse: collapse;
-}
-
-.cheat-sheet td {
-  border: 0.062rem solid var(--grey);
-  padding: 0.75rem 0;
-}
-
-.code {
-  background-color: var(--lightgrey);
-  font-family: "Courier New", Courier, monospace;
-}
-
-.firstcol {
-  width: 15%;
-}
-
-.midcol {
-  width: 20%;
-}
-
-.lastcol {
-  width: 65%;
-}
-
-#basedOn {
-  margin-right: 1rem;
-  font-size: 0.75rem;
-}
-
-footer em {
-  font-size: 0.75rem;
-}
-
 /* About me only */
 .lightbox-headshot {
   border: 0.125rem solid var(--gray);
   box-shadow: 0.25rem 0.5rem 1rem var(--lightorange);
   display: flex;
   justify-content: center;
+  width: 60%;
 }
 
 #headshot {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 .left-column-headshot {
-  flex: 0.5;
+  flex: 1.8;
 }
 .right-column-headshot {
-  flex: 1.5;
+  flex: 1;
 }
 .home-icon {
   height: 1rem;
@@ -303,9 +314,8 @@ footer em {
 .right-column-articles {
   flex: 1;
 }
-.space-between {
-  height: 1rem;
-}
+
+
 /*style-guide only*/
 .colourbox {
   min-height: 9rem;
@@ -326,6 +336,16 @@ footer em {
   position: fixed;
   margin: 0 auto;
   width: 100%;
+}
+/*panda-description-only*/
+#link-to-medium-hypotheses {
+  background-color: var(--link);
+  border-radius: 10%;
+}
+
+#panda-cycle {
+  float: left;
+  width: 60%;
 }
 
 /*Desktop styles specifically*/
@@ -377,7 +397,7 @@ footer em {
   }
 
   .lightbox {
-    margin: 0 auto;
+    margin: 0 auto 2rem auto;
   }
   h1 {
     margin-top: -3rem;

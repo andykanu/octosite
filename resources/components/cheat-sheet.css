@@ -1,0 +1,62 @@
+
+/* For cheat sheet only */
+#example {
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+#example-head {
+  padding: 1rem 0;
+}
+
+.semi-transparent {
+  opacity: 0.5;
+  color: var(--grey);
+}
+
+#declaration {
+  width: 20%;
+}
+
+.cheat-sheet {
+  text-align: center;
+  border: 0.062rem solid var(--grey);
+  max-width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.cheat-sheet td {
+  border: 0.062rem solid var(--grey);
+  padding: 0.75rem 0;
+}
+/*gives first row a little expansion */
+#padded {
+    height: 3rem;
+}
+
+.code {
+  background-color: var(--lightgrey);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.firstcol {
+  width: 15%;
+}
+
+.midcol {
+  width: 20%;
+}
+
+.lastcol {
+  width: 65%;
+}
+
+#basedOn {
+  margin-right: 1rem;
+  font-size: 0.75rem;
+}
+
+footer em {
+  font-size: 0.75rem;
+}

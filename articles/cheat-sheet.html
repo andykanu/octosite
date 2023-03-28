@@ -4,10 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../resources/components/cheat-sheet.css"
+    />
     <link rel="shortcut icon" href="../resources/images/navbarLogo.png" />
     <title>CSS Selectors - A Guide</title>
   </head>
@@ -17,22 +22,29 @@
         <ul class="orange">
           <li id="navLogo">
             <a href="../index.html"
-              ><img src="../resources/images/navbarLogo.png" class="stickyLogo" alt="link to homepage"
+              ><img
+                src="../resources/images/navbarLogo.png"
+                class="stickyLogo"
+                alt="link to homepage"
             /></a>
           </li>
           <li id="navHomeIcon">
             <a href="../index.html"
-              ><img src="../resources/images/Homeicon.png" class="home-icon" alt="link to homepage"
+              ><img
+                src="../resources/images/Homeicon.png"
+                class="home-icon"
+                alt="link to homepage"
             /></a>
-          
+          </li>
+
           <li>
             <a href="../about.html" class="nav-link"><strong>About</strong></a>
           </li>
-        </li>
-        <a href="../article-index.html" class="nav-link"
-          ><strong>Articles</strong></a
-        >
-      </li>
+          <li>
+            <a href="../article-index.html" class="nav-link"
+              ><strong>Articles</strong></a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -51,33 +63,32 @@
       </p>
     </section>
     <section id="example">
-    <h2 id="example-head">Example</h2>
-    <table id="example_table">
-      <thead>
-      </thead>
-      <tr>
-        <td><span class="code">p {</span></td>
-        <td><span class="semi-transparent"><-- selector</span></td>
-      </tr>
-      <tr>
-        <td id="declaration"><span class="code">color: red;</span></td>
-        <td>
-          <span class="semi-transparent"
-            ><--declaration, made up of property (color) : value (red)</span
-          >
-        </td>
-      </tr>
-      <tr>
-        <td><span class="code">}</span></td>
-      </tr>
-    </table>
-  </section>
+      <h2 id="example-head">Example</h2>
+      <table id="example_table">
+        <thead></thead>
+        <tr>
+          <td><span class="code">p {</span></td>
+          <td><span class="semi-transparent"><-- selector</span></td>
+        </tr>
+        <tr>
+          <td id="declaration"><span class="code">color: red;</span></td>
+          <td>
+            <span class="semi-transparent"
+              ><--declaration, made up of property (color) : value (red)</span
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><span class="code">}</span></td>
+        </tr>
+      </table>
+    </section>
     <hr class="semi-transparent" />
     <section class="main-contents">
       <h2 class="contents-heading">Reference</h2>
       <table class="cheat-sheet">
         <thead class="orange">
-          <th class="firstcol">Selector</th>
+          <th class="firstcol" id="padded">Selector</th>
           <th class="midcol">Description</th>
           <th class="lastcol">Use</th>
         </thead>
