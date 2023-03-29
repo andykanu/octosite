@@ -52,15 +52,28 @@
         and ensure you're aligned with the product strategy?
       </h2>
       <!--Main content-->
+
       <!--Panda framework image-->
-      <figure class="zoom-within-container">
+      <figure>
         <img
           src="../resources/images/Panda_Ps.png"
           alt="Panda framework - forward looking"
           class="large-image"
+          id="imgPSteps"
         />
+        <!--Modal -->
+        <div id="imgModal1" class="modal">
+          <!--close button-->
+          <span class="close" id="close1">&times</span>
+          <!--Modal content (the image)-->
+          <img class="modal-content" id="img01" />
+          <!--Modal caption-->
+          <div id="caption1"></div>
+        </div>
+        <!--Modal ends-->
         <figcaption>The PandA Framework</figcaption>
       </figure>
+
       <p>
         How do you decide where to invest in the short-term while acknowledging
         the uncertainty of the future and the possible pivots you'll have to
@@ -215,29 +228,49 @@
       <h4>Steps in the PandA Framework - A</h4>
       <section class="step">
         <h5>Appraised</h5>
-        <img
-          src="../resources/images/appraised.png"
-          alt="appraised stage of the framework"
-          class="float-left zoom-within-container"
-        />
-        <p>
-          Once the software has been released (the team has delivered on its
-          promises), we need to appraise whether it has had the desired impact.
-          We should observe usage of the software in action and measure whether
-          it has achieved the objectives we set out when creating our
-          hypotheses. Customer feedback will help us learn how well we are
-          doing. Whatever we learn from this data should then be applied to
-          further potential work and possibilities for the product. Thus, we can
-          see the framework operates as a cycle based on information and work
-          flow.
-        </p>
-        <figure>
-          <img
-            src="../resources/images/Screenshot 2023-03-26 at 16.08.26.png"
-            alt="the framework as a cycle"
-            id="panda-cycle"
-          />
-        </figure>
+        <div class="flex-appraise">
+          <div id="appraised-image">
+            <img
+              src="../resources/images/appraised.png"
+              alt="Appraise stage of the framework for released software"
+              class="float-left zoom-within-container"
+              id="imgASteps"
+            />
+            <!--Modal -->
+            <div id="imgModal2" class="modal">
+              <!--close button-->
+              <span class="close" id="close2">&times</span>
+              <!--Modal content (the image)-->
+              <img class="modal-content" id="img02" />
+
+              <!--Modal caption-->
+              <div id="caption2"></div>
+            </div>
+            <!--Modal ends-->
+          </div>
+          <div class="panda-container">
+            <div class="panda-cycle">
+              <p>
+                Once the software has been released (the team has delivered on
+                its promises), we need to appraise whether it has had the
+                desired impact. We should observe usage of the software in
+                action and measure whether it has achieved the objectives we set
+                out when creating our hypotheses. Customer feedback will help us
+                learn how well we are doing. Whatever we learn from this data
+                should then be applied to further potential work and
+                possibilities for the product. Thus, we can see the framework
+                operates as a cycle based on information and work flow.
+              </p>
+            </div>
+            <div class="panda-cycle">
+              <img
+                src="../resources/images/Screenshot 2023-03-26 at 16.08.26.png"
+                alt="the framework as a cycle"
+                id="cycle-view"
+              />
+            </div>
+          </div>
+        </div>
       </section>
       <section class="step">
         <h5>Alignment</h5>
@@ -343,5 +376,6 @@
       ></noscript
     >
   </body>
-  <script src="resources/scripts/topLevelWhiteHomeIcon.js"></script>
+  <script src="../resources/scripts/topLevelWhiteHomeIcon.js"></script>
+  <script src="../resources/scripts/modalDisplay.js"></script>
 </html>

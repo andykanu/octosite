@@ -15,6 +15,7 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 1rem;
   font-family: "Open Sans", Sans-Serif;
@@ -118,24 +119,6 @@ section {
 }
 
 /* images settings*/
-.zoom-within-container {
-    height: auto; 
-    overflow: scroll;
-    scrollbar-width: none;
-    
-  }
-  .zoom-within-container::-webkit-scrollbar { 
-    display: none;  /* Hides scrollbar in Safari and Chrome */
-}
-  .zoom-within-container img {
-    transition: width .5s ease;
-    }
-  .zoom-within-container img:hover {
-    transition: width .5s ease;
-    width: 150%;
-    height: auto; 
-  }
-
 
 figcaption {
   margin: 0 auto;
@@ -148,6 +131,77 @@ figcaption {
   width: 100%;
   height: auto;
 }
+
+/* The modal (background) */
+.modal {
+  display: none; /* hidden by default*/
+  position: fixed;
+  z-index: 1;
+  padding-top: 5rem;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--black)
+}
+
+/*Modal content (image)*/
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 100rem;
+}
+
+#imgPSteps, #imgASteps {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#imgPSteps:hover, #imgASteps:hover {
+  opacity:0.8;
+}
+
+/*Modal image caption*/
+#caption1, #caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 100rem;
+  text-align: center;
+  color: var(--grey);
+padding: 1rem 0;
+height: 10rem;
+}
+/*add animation zoom in modal */
+.modal-content, #caption1, #caption2 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1);}
+  
+}
+/* Modal close button */
+.close {
+  position: absolute;
+  top: 4rem;
+  right: 2.5rem;
+  color: var(--grey);
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover, close:focus {
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 .float-left {
   float: left;
@@ -340,18 +394,39 @@ em u {
 /*panda-description-only*/
 #link-to-medium-hypotheses {
   background-color: var(--link);
-  border-radius: 10%;
+  border-radius: 5%;
+  max-width: 10rem;
+  min-width: 7.5rem;
+  text-align: justify;
 }
 
-#panda-cycle {
-  float: left;
-  width: 60%;
+.flex-appraise {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;   
+ flex-direction: row;
+ }
+#appraised-image {
+  width: 35%;
 }
-#panda-cycle::after {
-  content: "";
-  clear: both;
-  display: table;
+#cycle-view {
+  width: 100%;
+  height: auto;
+
+
 }
+.panda-container {
+  flex-direction: column;
+  width: 65%;
+}
+
+#imgASteps {
+  width: 100%;
+  height: auto;
+}
+
 
 /*Desktop styles specifically*/
 @media screen and (min-width: 50rem) {
@@ -406,5 +481,13 @@ em u {
   }
   h1 {
     margin-top: -3rem;
+
   }
+}
+
+/*modal content on smaller screens */
+@media only screen and (max-width: 50rem) {
+  .modal-content {width: 100%;}
+  .flex-appraise {flex-direction: column;
+}
 }
