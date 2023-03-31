@@ -120,6 +120,10 @@ section {
 
 /* images settings*/
 
+img {
+  border: 0.25px solid var(--lightgrey);
+}
+
 figcaption {
   margin: 0 auto;
   text-align: center;
@@ -136,7 +140,7 @@ figcaption {
 .modal {
   display: none; /* hidden by default*/
   position: fixed;
-  z-index: 1;
+  z-index: 3; /* highest z-index value today */
   padding-top: 5rem;
   left: 0;
   top: 0;
@@ -154,28 +158,30 @@ figcaption {
   max-width: 100rem;
 }
 
-#imgPSteps, #imgASteps {
+.clickable-image  {
   cursor: pointer;
   transition: 0.5s;
 }
 
-#imgPSteps:hover, #imgASteps:hover {
+.clickable-image:hover {
   opacity:0.8;
 }
-
+#cone-of-uncertainty {
+  border: none;
+}
 /*Modal image caption*/
-#caption1, #caption2 {
+.caption {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 100rem;
   text-align: center;
   color: var(--grey);
-padding: 1rem 0;
-height: 10rem;
+  padding: 1rem 0;
+  height: 10rem;
 }
 /*add animation zoom in modal */
-.modal-content, #caption1, #caption2 {
+.modal-content, .caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -200,19 +206,6 @@ height: 10rem;
   color: var(--white);
   text-decoration: none;
   cursor: pointer;
-}
-
-
-.float-left {
-  float: left;
-  width: 33%;
-  height: auto;
-  margin-right: 2rem;
-}
-.float-right {
-  float: right;
-  width: 20%;
-  
 }
 /* Text & typography */
 h1 {
@@ -386,18 +379,23 @@ em u {
 #clear {
   clear: both;
 }
+/*class added to navbar to enable responsiveness and stickiness  - see navbar.js for details*/
 .navOtherPages {
   position: fixed;
   margin: 0 auto;
   width: 100%;
 }
 /*panda-description-only*/
-#link-to-medium-hypotheses {
+.link-to-external-site-content {
   background-color: var(--link);
   border-radius: 5%;
-  max-width: 10rem;
-  min-width: 7.5rem;
+  max-width: 12rem;
+  min-width: 8rem;
+  padding: 0.5rem;
   text-align: justify;
+  float: right;
+  width: 20%;
+
 }
 
 .flex-appraise {
@@ -406,16 +404,14 @@ em u {
   display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;   
- flex-direction: row;
+  flex-direction: row-reverse;
+  align-items: center;
  }
 #appraised-image {
   width: 35%;
 }
 #cycle-view {
-  width: 100%;
-  height: auto;
-
-
+width: 90%;
 }
 .panda-container {
   flex-direction: column;
@@ -423,10 +419,12 @@ em u {
 }
 
 #imgASteps {
-  width: 100%;
+  width: 120%;
   height: auto;
 }
-
+#alignment-paragraph {
+  margin-top: -0.5rem;
+}
 
 /*Desktop styles specifically*/
 @media screen and (min-width: 50rem) {
@@ -485,9 +483,13 @@ em u {
   }
 }
 
-/*modal content on smaller screens */
+/*modal content and flex content on smaller screens */
 @media only screen and (max-width: 50rem) {
   .modal-content {width: 100%;}
-  .flex-appraise {flex-direction: column;
+  .flex-appraise {flex-direction: column-reverse;
+}
+
+#appraised-image {
+  width: 80%;
 }
 }

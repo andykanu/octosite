@@ -58,7 +58,7 @@
         <img
           src="../resources/images/Panda_Ps.png"
           alt="Panda framework - forward looking"
-          class="large-image"
+          class="large-image clickable-image"
           id="imgPSteps"
         />
         <!--Modal -->
@@ -68,7 +68,7 @@
           <!--Modal content (the image)-->
           <img class="modal-content" id="img01" />
           <!--Modal caption-->
-          <div id="caption1"></div>
+          <div id="caption1" class="caption"></div>
         </div>
         <!--Modal ends-->
         <figcaption>The PandA Framework</figcaption>
@@ -96,6 +96,7 @@
           src="../resources/images/cone-of-uncertainty.png"
           alt="The cone of uncertainty"
           class="large-image"
+          id="cone-of-uncertainty"
         />
         <figcaption>The Cone of Uncertainty</figcaption>
       </figure>
@@ -171,7 +172,7 @@
           href="https://medium.com/agileinsider/forming-experimental-product-hypotheses-85b1d41541c4"
           target="_blank"
         >
-          <aside class="float-right" id="link-to-medium-hypotheses">
+          <aside class="link-to-external-site-content">
             Read more about how to create great product hypotheses on Medium.
           </aside></a
         >
@@ -229,13 +230,17 @@
       <section class="step">
         <h5>Appraised</h5>
         <div class="flex-appraise">
+          <!--first column of flex-appraise box which contains #appraised-image only and modal-->
           <div id="appraised-image">
-            <img
-              src="../resources/images/appraised.png"
-              alt="Appraise stage of the framework for released software"
-              class="float-left zoom-within-container"
-              id="imgASteps"
-            />
+            <figure>
+              <img
+                src="../resources/images/appraised.png"
+                alt="Appraise stage of the framework for released software"
+                id="imgASteps"
+                class = "clickable-image"
+              />
+              <figcaption>The Appraised step</figcaption>
+            </figure>
             <!--Modal -->
             <div id="imgModal2" class="modal">
               <!--close button-->
@@ -244,13 +249,17 @@
               <img class="modal-content" id="img02" />
 
               <!--Modal caption-->
-              <div id="caption2"></div>
+              <div id="caption2" class="caption"></div>
             </div>
             <!--Modal ends-->
           </div>
+
+          <!--closes image div (first column of flexbox container .flex-appraise)-->
           <div class="panda-container">
+            <!--Second column of flexbox .flex-appraise. 
+            Also creates second flexbox containing two #panda-cycle items-->
             <div class="panda-cycle">
-              <p>
+              <p id="alignment-paragraph">
                 Once the software has been released (the team has delivered on
                 its promises), we need to appraise whether it has had the
                 desired impact. We should observe usage of the software in
@@ -263,11 +272,28 @@
               </p>
             </div>
             <div class="panda-cycle">
-              <img
-                src="../resources/images/Screenshot 2023-03-26 at 16.08.26.png"
-                alt="the framework as a cycle"
-                id="cycle-view"
-              />
+              <figure>
+                <img
+                  src="../resources/images/Screenshot 2023-03-26 at 16.08.26.png"
+                  alt="The PandA framework as a cycle"
+                  id="cycle-view"
+                  class = "clickable-image"
+                />
+                <figcaption>PandA visualised as a cycle</figcaption>
+              </figure>
+               <!--Modal -->
+            <div id="imgModal3" class="modal">
+              <!--close button-->
+              <span class="close" id="close3">&times</span>
+              <!--Modal content (the image)-->
+              <img class="modal-content" id="img03" />
+
+              <!--Modal caption-->
+              <div id="caption3" class="caption"></div>
+            </div>
+            <!--Modal ends-->
+          </div>
+
             </div>
           </div>
         </div>
@@ -299,7 +325,11 @@
           <img
             src="../resources/images/panda-of-uncertainty.png"
             alt="framework with timeline"
+            class="large-image"
           />
+          <figcaption>
+            Framework as seen with the cone of uncertainty
+          </figcaption>
         </figure>
       </section>
       <h3>In summary</h3>
