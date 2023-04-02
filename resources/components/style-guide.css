@@ -1,0 +1,16 @@
+/*style-guide only*/
+.colourbox {
+    min-height: 9rem;
+    min-width: 16rem;
+    border: 0.125rem solid var(--black);
+    margin: 2rem;
+    float: left;
+  }
+  
+  #beigebox {
+    background-color: var(--text);
+    color: var(--orange);
+  }
+  #clear {
+    clear: both;
+  }

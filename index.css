@@ -311,14 +311,6 @@ br {
   grid-column-end: 4;
 }
 
-.left-column {
-  flex: 0.75;
-}
-
-.right-column {
-  flex: 1.25;
-  margin-bottom: 4rem;
-}
 .lightbox {
   border: 0.125rem solid var(--gray);
   box-shadow: 0.25rem -0.25rem 1rem var(--lightorange);
@@ -351,14 +343,7 @@ br {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.left-column .lightbox {
-  border: none;
-  box-shadow: none;
-  max-width: 90%;
-}
-.left-column .lightbox p {
-  font-size: 0.9rem;
-}
+
 .lightbox p,
 .lightbox h2, .lightbox p a {
   margin: 0.5rem;
@@ -382,55 +367,11 @@ em u {
   font-size: 0.8rem;
 }
 
-/* About me only */
-.lightbox-headshot {
-  border: 0.125rem solid var(--gray);
-  box-shadow: 0.25rem 0.5rem 1rem var(--lightorange);
-  display: flex;
-  justify-content: center;
-  width: 60%;
-}
-
-#headshot {
-  width: 100%;
-  height: auto;
-}
-.left-column-headshot {
-  flex: 1.8;
-}
-.right-column-headshot {
-  flex: 1;
-}
 .home-icon {
   height: 1rem;
   width: auto;
 }
 
-/*Articles list only */
-.left-column-articles {
-  flex: 1;
-}
-.right-column-articles {
-  flex: 1;
-}
-
-
-/*style-guide only*/
-.colourbox {
-  min-height: 9rem;
-  min-width: 16rem;
-  border: 0.125rem solid var(--black);
-  margin: 2rem;
-  float: left;
-}
-
-#beigebox {
-  background-color: var(--text);
-  color: var(--orange);
-}
-#clear {
-  clear: both;
-}
 /*class added to navbar to enable responsiveness and stickiness  - see navbar.js for details*/
 .navOtherPages {
   position: fixed;
@@ -519,13 +460,7 @@ width: 90%;
     top: 0;
     height: 3rem;
   }
-  .left-column-headshot {
-    flex: 0.75;
-  }
-  .right-column-headshot {
-    flex: 1.25;
-  }
-  h1 {
+ h1 {
     margin-top: -3rem;
 
   }
@@ -540,10 +475,13 @@ width: 90%;
 #appraised-image {
   width: 80%;
 }
-.grid {
+.grid, #about-me-lightbox {
   display: grid;
   grid-template-columns: 1fr ;
-  
+
+  }
+#about-me-lightbox img {
+  display: none;
 }
 .first-grid-row {
   grid-column-start: 1;

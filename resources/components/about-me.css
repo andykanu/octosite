@@ -1,0 +1,39 @@
+
+/* About me only */
+#about-me-lightbox {
+    display: grid; 
+    grid-template-columns: auto 12rem;
+    justify-content: space-between;
+    
+  }
+  
+  #about-me-lightbox:hover {
+    opacity: 1;
+    cursor: default;
+    transform: scale(1);
+  }
+  #about-me-lightbox p {
+    color:var(--text);
+    text-align: left;
+  }
+    #about-me-lightbox h2 {
+    color:var(--text);
+    text-align: center;
+  }
+  
+  #about-me-lightbox a {
+    color: var(--link);
+  text-align: left;
+  margin: 0
+  }
+  
+  #about-me-lightbox a:hover {
+    color: var(--linktext);
+  }
+  
+  #about-me-lightbox img {
+    opacity: 1;
+    filter: 0;
+    -webkit-filter: 0;
+  }
+  

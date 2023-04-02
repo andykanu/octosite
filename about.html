@@ -8,8 +8,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link rel="shortcut icon" href="resources/images/navbarLogo.png" />
-    <title>Octoshark - About</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="resources/components/about-me.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="resources/images/navbarLogo.png"
+    />
+    <title>Octoshark - About Me</title>
   </head>
   <body>
     <!--Site header-->
@@ -39,11 +48,33 @@
       </nav>
     </header>
     <!--Page title-->
-    <section class="titleOther"><h1>About</h1></section>
-
-    <section class="main-welcome">
-      <section class="left-column-headshot">
-        <div class="lightbox-headshot">
+    <section class="titleOther"><h1>Contributors</h1></section>
+    <!--This is where the grid starts. This Div enables re-use of CSS from welcome and articles page-->
+    <div class="grid">
+      <!--ensure about me is full-width-->
+      <section class="lightbox first-grid-row" id="about-me-lightbox">
+        <!--Create internal grid-->
+        <div id="text-about-me-lightbox">
+          <h2>Andrew Keogh</h2>
+          <p>
+            I am a product and engineering leader, with a passion for delivering
+            great user experiences in different industries, countries and
+            cultures. I am an enthusiastic advocate for organisational change
+            and improvement. I currently lead the engineering teams delivering
+            <a href="https://www.workhuman.com" class="about-link"
+              >Workhuman's</a
+            >
+            data science-driven applications, including
+            <a href="https://www.workhuman.com/workhuman-iq/">iQ</a> and
+            <a href="https://moodtracker.workhuman.com/">Moodtracker</a>, an
+            award-winning voice of the employee solution.
+          </p>
+          <p>
+            I live and work in Dublin, Ireland after over 20 years wandering the
+            world, in search of interesting problems to solve.
+          </p>
+        </div>
+        <div id="about-me-image">
           <img
             src="https://newenergy.wpengine.com/wp-content/uploads/2019/07/Andrew-Keogh-e1562884327412.jpg"
             alt="my picture"
@@ -51,32 +82,15 @@
           />
         </div>
       </section>
-      <div class="right-column-headshot">
-        <div class="lightbox">
-          <h2>Andrew Keogh</h2>
-          <p>
-            I am a product and engineering leader, with many years experience
-            delivering successful user experiences across the globe. I currently
-            lead the engineering teams delivering
-            <a href="https://www.workhuman.com" class="about-link"
-              >Workhuman's</a
-            >
-            data science-driven applications, including
-            <a href="https://moodtracker.workhuman.com/">Moodtracker</a>, an
-            award-winning voice of the employee solution, and
-            <a href="https://www.workhuman.com/workhuman-iq/">iQ</a>, an
-            analytics product.
-          </p>
-          <p>
-            I live and work in Dublin, Ireland after over 20 years wandering the
-            world, solving interesting problems.
-          </p>
-        </div>
-      </div>
-    </section>
-
+    </div>
     <footer class="orange">
       <div>
+        <a href="https://twitter.com/iamakeogh" target="_blank"
+          ><img
+            src="resources/images/Twitter social icons - rounded square - blue.png"
+            class="logo"
+            alt="Follow me on Twitter"
+        /></a>
         <a href="https://github.com/andykanu?tab=repositories" target="_blank"
           ><img
             src="resources/images/GitHub-Mark-Light-120px-plus.png"
