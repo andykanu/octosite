@@ -31,11 +31,35 @@ body {
 #site-header {
   display: none;
 }
+
+/*Main heading */
+.title,
+.titleOther {
+  margin-top: 7rem;
+}
+
+.orange,
+#orangebox {
+  background-color: var(--orange);
+  color: var(--text);
+}
+
+section {
+  margin: 0 2rem;
+}
+
+a {
+  color: var(--link);
+  margin: 0;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;  
+ 
+}
+
 /*--NAVBAR---*/
 
 
 /*Navbar setttings */
-a,
 nav ul a {
   text-decoration: none;
   color: var(--black);
@@ -48,6 +72,7 @@ footer div a:active {
 nav ul a:hover {
   color: var(--white);
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -85,14 +110,11 @@ nav li {
 #navLogo {
   display: inline-flex;
 }
+
 .stickyLogo {
   height: 2rem;
 }
-/*Main heading */
-.title,
-.titleOther {
-  margin-top: 7rem;
-}
+
 .about-link {
   text-decoration: underline;
   color: var(--link);
@@ -109,14 +131,11 @@ nav li {
   color: var(--linktext);
 }
 
-.orange,
-#orangebox {
-  background-color: var(--orange);
-  color: var(--text);
-}
-
-section {
-  margin: 0 2rem;
+/*class added to navbar to enable responsiveness and stickiness  - see navbar.js for details*/
+.navOtherPages {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /*----IMAGERY---*/
@@ -139,11 +158,7 @@ figcaption {
   height: auto;
 }
 
-
-/*--LAYOUT --*/
-
-
-/* The modal (background) */
+/* MODAL (background) */
 .modal {
   display: none; /* hidden by default*/
   position: fixed;
@@ -157,7 +172,7 @@ figcaption {
   background-color: var(--black)
 }
 
-/*Modal content (image)*/
+/* MODAL content (image)*/
 .modal-content {
   margin: auto;
   display: block;
@@ -176,7 +191,7 @@ figcaption {
 #cone-of-uncertainty {
   border: none;
 }
-/*Modal image caption*/
+/* MODAL caption*/
 .caption {
   margin: auto;
   display: block;
@@ -214,7 +229,9 @@ figcaption {
   text-decoration: none;
   cursor: pointer;
 }
-/* Text & typography */
+
+
+/* TEXT AND TYPOGRAPHY */
 h1 {
   color: var(--orange);
   text-align: center;
@@ -264,7 +281,7 @@ aside {
   margin: 1rem;
 }
 
-/*Footer */
+/* FOOTER */
 
 footer {
   margin: 2rem;
@@ -291,12 +308,13 @@ br {
   font-size: 0.75rem;
   color: var(--grey);
 }
+
+/* GRID LAYOUTS */
 /*Welcome page only*/
 .main-welcome {
   display: flex;
   flex-direction: column;
 }
-
 
 /*Grid for articles sections*/
 .grid {
@@ -319,6 +337,7 @@ br {
   position: relative;
   text-align: center;
   }
+
 .grid .lightbox img {
   width: 0;
   height: 0;
@@ -357,12 +376,13 @@ br {
   padding-bottom: 0.5rem;
 }
 
-
 .lightbox p {
   padding-bottom: 1rem;
   padding-top: 0;
 }
-
+.lightbox a {
+  text-decoration: none;
+}
 em u {
   font-size: 0.8rem;
 }
@@ -372,13 +392,7 @@ em u {
   width: auto;
 }
 
-/*class added to navbar to enable responsiveness and stickiness  - see navbar.js for details*/
-.navOtherPages {
-  position: fixed;
-  margin: 0 auto;
-  width: 100%;
-}
-/*panda-description-only*/
+/*LINKS TO EXTERNAL ARTICLES MENTIONED AS BOXES WITHING CONTENT */
 .link-to-external-site-content {
   background-color: var(--link);
   border-radius: 5%;
@@ -388,9 +402,8 @@ em u {
   text-align: justify;
   float: right;
   width: 20%;
-
 }
-
+/* FLEXBOX FOR APPRAISED SECTION IN PANDA ARTICLE */
 .flex-appraise {
   display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
@@ -404,7 +417,7 @@ em u {
   width: 35%;
 }
 #cycle-view {
-width: 90%;
+  width: 90%;
 }
 .panda-container {
   flex-direction: column;

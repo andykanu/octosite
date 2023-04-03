@@ -23,8 +23,10 @@
   
   #about-me-lightbox a {
     color: var(--link);
-  text-align: left;
-  margin: 0
+    text-align: left;
+    margin: 0;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;  
   }
   
   #about-me-lightbox a:hover {
@@ -33,7 +35,7 @@
   
   #about-me-lightbox img {
     opacity: 1;
-    filter: 0;
-    -webkit-filter: 0;
+    filter: none;
+    -webkit-filter: none;
   }
   
