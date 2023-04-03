@@ -35,7 +35,8 @@ body {
 /*Main heading */
 .title,
 .titleOther {
-  margin-top: 7rem;
+  margin-top: 8rem;
+  padding: 3rem 0 1rem 0;
 }
 
 .orange,
@@ -44,9 +45,6 @@ body {
   color: var(--text);
 }
 
-section {
-  margin: 0 2rem;
-}
 
 a {
   color: var(--link);
@@ -411,17 +409,16 @@ em u {
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;   
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-start;
  }
 #appraised-image {
-  width: 35%;
+  width: 40%;
 }
 #cycle-view {
-  width: 90%;
+  width: 100%;
 }
 .panda-container {
-  flex-direction: column;
-  width: 65%;
+  width: 60%;
 }
 
 #imgASteps {
