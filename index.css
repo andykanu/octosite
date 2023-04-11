@@ -274,6 +274,9 @@ aside {
   margin-bottom: -1rem;
  
 }
+.above-the-fold p {
+  margin-bottom: 2rem;
+}
 
 .step h5, p, ul, aside {
   margin: 1rem;
@@ -420,13 +423,12 @@ em u {
 .panda-container {
   width: 60%;
 }
-
+#brainImg {
+  min-width: 20rem;
+}
 #imgASteps {
   width: 120%;
   height: auto;
-}
-#alignment-paragraph {
-  margin-top: -0.5rem;
 }
 
 /*Desktop styles specifically*/
@@ -482,7 +484,7 @@ em u {
   .flex-appraise {flex-direction: column-reverse;
 }
 
-#appraised-image {
+#appraised-image, #brainImg {
   width: 80%;
 }
 .grid, #about-me-lightbox {
