@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../resources/images/navbarLogo.png"
+    />
+    <!--ENTER ARTICLE TITLE HERE FOR DISPLAY IN TAB-->
+    <title>Tetris</title>
+  </head>
+  <body>
+    <!--Site header-->
+    <header>
+      <!--Navigation bar-->
+      <nav class="navOtherPages">
+        <ul class="orange">
+          <li id="navLogo">
+            <a href="../index.html"
+              ><img src="../resources/images/navbarLogo.png" class="stickyLogo"
+            /></a>
+          </li>
+          <li id="navHomeIcon">
+            <a href="../index.html"
+              ><img src="../resources/images/Homeicon.png" class="home-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="../about.html" class="nav-link"><strong>About</strong></a>
+          </li>
+          <li>
+            <a href="../article-index.html" class="nav-link"
+              ><strong>Articles</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--PAGE TITLE/HEADING-->
+    <section class="titleOther">
+      <h1>Winning Calendar Tetris</h1>
+    </section>
+    <!--SUB-HEADING-->
+    <section class="above-the-fold">
+      <h2 class="contents-heading">
+        Clean up your calendar and give your brain room to breathe.
+      </h2>
+      <p>
+        Towards the end of 2022, I found myself with a weekly calendar that
+        looked more like the classic game
+        <a href="https://www.tetris.com/play-tetris" target="_blank">Tetris</a>
+        than anything approaching a manageable schedule. Coming into 2023,
+        something had to give.
+      </p>
+    </section>
+    <!--MAIN BODY-->
+    <section>
+      <h3>I brought this on myself</h3>
+      <section class="flex-appraise">
+        <section class="panda-container" id="">
+          <figure id="calendarTetris">
+            <img
+              src="../resources/images/tetris/calendar_week.jpg"
+              alt="Calendar Tetris"
+              id="cycle-view"
+            />
+            <figcaption>Calendar Tetris</figcaption>
+          </figure>
+        </section>
+
+        <section class="panda-container" id="appraised-image">
+          <p>
+            I had developed a habit of saying ‘yes’ to every meeting invitation
+            that came my way. This wasn’t a case of
+            <a
+              href="https://en.wikipedia.org/wiki/Fear_of_missing_out"
+              target="_blank"
+              >FOMO</a
+            >. I had followed the advice of a former CEO. His life hack was to
+            say yes to everything and then let his calendar resolve itself. He
+            reckoned (correctly at the time – we’re pre-iPhone here) that most
+            meetings get rescheduled anyway. Saying yes to everything allowed
+            him to appear amenable and he rarely needed to do any heavy lifting
+            to free up a conflict.
+          </p>
+
+          <p>
+            This approach worked pre-pandemic when physical presence for
+            meetings was the norm, but once the world moved onto Zoom, meetings
+            became more stubborn. It suddenly became possible, nay, typical for
+            people to be able to meet and context-switch across multiple
+            locations, projects and initiatives seamlessly.
+            <a
+              href="https://techcrunch.com/2021/04/21/this-is-your-brain-on-zoom/"
+              target="_blank"
+              >It may not be good for your brain</a
+            >
+            but it quickly became (to quote a phrase we all came to dread)
+            <a href="https://en.wikipedia.org/wiki/New_normal" target="_blank"
+              >the new normal</a
+            >
+            for people to bounce from meeting to meeting, with no breaks
+            in-between.
+          </p>
+        </section>
+      </section>
+      <p>
+        Almost overnight, the strategy of saying ‘yes’ to everything meant I
+        really did need to be in four places at once. Having no thinking time or
+        preparation time between meetings meant that often they were adequate at
+        best and ineffective at worst.
+      </p>
+      <p>
+        I struggled gamely on for almost two years, moving meetings at the last
+        minute, shortening them, ducking and diving as best I could while
+        allowing the stress of multiple simultaneous demands to build up and
+        take its toll on my psyche as well as my calendar. By December 2022,
+        enough was enough.
+      </p>
+      <h3>The Great Reset</h3>
+      <p>
+        In late December 2022, I cancelled every single recurring meeting in my
+        calendar. As a people leader, I had weekly check-ins with my direct
+        reports, skip-levels in both directions, and numerous ceremonies for the
+        teams and squads in my area.
+      </p>
+      <p>
+        Having created an almost-meeting free 2023, it was time to bring
+        intention to my scheduling. The important meetings (1-1s, skip levels)
+        went back in for times that left me some space and allowed me to remove
+        accidental clashes that had emerged organically. Ceremonies such as
+        sprint reviews were either delegated to others to schedule, or put in
+        for a time that worked for me repeatedly.
+      </p>
+      <div class="flex-appraise">
+        <div>
+          <figure>
+            <img
+              src="https://images.ctfassets.net/y8fb0rhks3b3/6oLzitAgZjOpD5G3NYiIkp/229f59b3aec05da074d066337c765317/pulsereport_scans_desktop.svg"
+              alt="Microsoft research showing impact of no breaks on brains"
+              class="clickable-image"
+              id="brainImg"
+            />
+            <figcaption>
+              Stress increases without break between meetings<br />Image credit:
+              Microsoft/Brown Bird Design
+            </figcaption>
+          </figure>
+          <!--Modal -->
+          <div id="imgModal1" class="modal">
+            <!--close button-->
+            <span class="close" id="close1">&times</span>
+            <!--Modal content (the image)-->
+            <img class="modal-content" id="img01" />
+            <!--Modal caption-->
+            <div id="caption1" class="caption"></div>
+          </div>
+          <!--Modal ends-->
+        </div>
+        <div>
+          <h3>Give me a break</h3>
+          <p>
+            If any two meetings were back-to-back, I inserted a 15 minute break
+            between then in order to build mental breaks into my calendar. I
+            wanted to:
+          </p>
+          <ul>
+            <li>
+              follow the science showing your brain needs a cooling-off period
+              between Zooms,
+            </li>
+            <li>give myself time for some movement breaks,</li>
+            <li>
+              ensure I could make enough tea to remain sufficiently caffeinated
+              for the day.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h3>Finding Focus</h3>
+      <p>
+        I had been using Microsoft Outlook’s Focus Time feature for some time.
+        It allows you to block out up to two hours a day automatically two weeks
+        in advance. Before this year, I had given away the time cheaply, telling
+        people to schedule in time. This had two terrible effects. The first was
+        obvious. I was overwhelmed with meetings and had no thinking time. The
+        second and larger consequence was that I had trained my colleagues to
+        ignore times in my schedule when I was busy. The calendar tetris
+        increased and my thinking time disappeared completely as a result.
+      </p>
+      <p>
+        This reset would mean nothing without applying some discipline on myself
+        and my calendar. Since January, I've been protecting my focus time, and
+        have become way more effective as a result, both in meetings and outside
+        them. The only invitations I now accept have to work around meetings
+        that have already been scheduled. I told everyone with whom I met
+        regularly that I would be expecting to know the meeting’s agenda or at
+        least its purpose before I would attend, and I could use my new-found
+        focus time to prepare.
+      </p>
+      <h3>It's Not Nirvana</h3>
+      <p>
+        As with so many things, the key to happiness is accepting your lack of
+        control. I still sacrifice some focus time, and find myself having to
+        reschedule recurring meetings on occasion. I can’t pretend that things
+        are perfect and my days are universally well-ordered.
+      </p>
+      <p>
+        I still spend time at the start of the week moving things around, so
+        that I only have one meeting at any one time that week. The occasional
+        unmissable (and unmovable) meeting still falls from the sky, but I have
+        reached the point where I decline a number of meetings (offering a
+        rescheduled option) so that my calendar is manageable and no longer a
+        major source of stress.
+      </p>
+      <p>Here are some tips that I learned that I hope can help you.</p>
+    </section>
+    <section>
+      <h3>Tips</h3>
+      <h4>1. Get over yourself</h4>
+      <p>
+        If you’re attending meetings out of FOMO, then get over yourself. Think
+        of all the more valuable ways you could be spending your time instead of
+        in meetings. Nobody wants to hear about all the meetings you have to
+        attend, and the fact is, you don’t need to go to all of them.
+      </p>
+      <p>
+        If you’re a leader and you are in all of your team’s meetings, you may
+        think you’re an empowering leader where you’re always accessible. Your
+        team probably think you’re a control freak and have little or no
+        <a
+          href="https://hbr.org/2023/02/what-is-psychological-safety"
+          target="_blank"
+        >
+          psychological safety.
+        </a>
+        Trust them to do it without you sometimes. You'll be amazed at the
+        results.
+      </p>
+      <h3>2. Create space</h3>
+      <p>
+        Restructure your calendar. If you’re scheduling multiple meetings in a
+        row, recurring or otherwise, give yourself time between them. I have
+        found that scheduling 30-minute meetings for 25 minutes or reducing one
+        hour to fifty minutes has made no difference whatsoever. The time still
+        gets used up. What has helped is creating real space between calls, so
+        that if you have a meeting scheduled to finish on the hour, start your
+        next call at 15 minutes past. It’s unlikely that anyone will insert
+        anything meaningful into a 15 minute gap, and it gives you important
+        mental breathing room.
+      </p>
+      <h3>3. Start with why</h3>
+      <p>
+        If you’re creating a meeting, or being invited to one, make sure you
+        share an agenda, or at least the meeting’s purpose and then stick to it.
+        Don’t drop extra topics in at the last minute. Respect people’s time.
+      </p>
+
+      <aside>
+        We have to stop focusing on agendas and minutes and rules, and accept
+        the fact that bad meetings start with the attitudes and approaches of
+        the people who lead and take part in them. - Patrick Lencioni
+      </aside>
+
+      <h3>4. Value asynchronicity</h3>
+      <p>
+        Prize asynchronous communication. Does your meeting need to be a
+        meeting? If it’s an update, can it be sent by email or Slack? If it’s a
+        conversation starter or sharing an idea,, would a Slack channel be more
+        effective for gathering views or feedback?
+      </p>
+      <h3>5. Plan ahead</h3>
+      <p>
+        Prepare. Show respect for the meeting and your colleagues by being ready
+        for it. There are few things worse than spending the first 10 minutes of
+        a 25 minute meeting refamiliarising people with the topic. It wastes
+        people's precious time. If you're not ready, postpone the meeting. You
+        and your team deserve better.
+      </p>
+      <h3>6. Take lunch</h3>
+      <p>
+        You deserve it. Once we started meeting in-person again, my colleagues
+        and I remarked how we never had lunch at home. Take lunch. You need a
+        breather. Just because you can turn your camera off and swallow a
+        sandwich doesn't mean you should. Your body will thank you.
+      </p>
+
+      <h3>7. Keep at it</h3>
+      <p>
+        Like any change, it’s hard at first when you take hold of your calendar.
+        But if you don’t decide what’s valuable and schedule your time
+        accordingly, someone else will do it for you. Persevere. It will be
+        worth it. You can win Calendar Tetris.
+      </p>
+    </section>
+
+    <!--MAIN SECTION ENDS - FOOTER-->
+
+    <footer class="orange">
+      <div>
+        <a href="https://twitter.com/iamakeogh" target="_blank"
+          ><img
+            src="../resources/images/Twitter social icons - rounded square - blue.png"
+            class="logo"
+            alt="Follow me on Twitter"
+        /></a>
+        <a href="https://github.com/andykanu?tab=repositories" target="_blank"
+          ><img
+            src="../resources/images/GitHub-Mark-Light-120px-plus.png"
+            alt="Github logo"
+            class="logo"
+        /></a>
+        <a href="https://www.linkedin.com/in/andrew-keogh-ie/" target="_blank"
+          ><img
+            src="../resources/images/LI-In-Bug.png"
+            alt="LinkedIn logo"
+            class="logo"
+        /></a>
+      </div>
+      <div class="copyright" id="orange">&copy; 2023 Octoshark Ltd</div>
+    </footer>
+    <!--DISCQUS THREAD - UPDATE URL BELOW-->
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+      var disqus_config = function () {
+        this.page.url = "https://octoshark.net/articles/tetris.html"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "calender_tetris"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://octoshark.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+  </body>
+  <script src="../resources/scripts/articleLevelWhiteHomeIcon.js"></script>
+  <script src="../resources/scripts/modalDisplay.js"></script>
+</html>
