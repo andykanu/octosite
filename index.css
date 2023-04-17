@@ -195,6 +195,8 @@ figcaption {
 #cone-of-uncertainty {
   border: none;
 }
+
+
 /* MODAL caption*/
 .caption {
   margin: auto;
@@ -413,6 +415,24 @@ em u {
   width: auto;
 }
 
+/*Grid for about me lightbox and panda name*/
+#about-me-lightbox {
+  display: grid; 
+  grid-template-columns: auto 12rem;
+  justify-content: space-between;
+  min-height: 8rem;
+}
+
+#about-me-lightbox:hover {
+  opacity: 1;
+  cursor: default;
+  transform: scale(1);
+}
+
+#logo-cell {
+  height: auto; 
+  overflow: hidden;
+}
 /*LINKS TO EXTERNAL ARTICLES MENTIONED AS BOXES WITHING CONTENT */
 .link-to-external-site-content {
   background-color: var(--lightorange);
@@ -531,3 +551,11 @@ em u {
   grid-column-end: 2;
 }
 }
+
+/*Special breakpoint for panda logo 
+@media only screen and (max-width: 70rem) {
+#logo-cell {
+  height: auto;
+}
+}
+*/

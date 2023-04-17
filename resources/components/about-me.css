@@ -1,17 +1,8 @@
 
 /* About me only */
-#about-me-lightbox {
-    display: grid; 
-    grid-template-columns: auto 12rem;
-    justify-content: space-between;
-    
-  }
+
   
-  #about-me-lightbox:hover {
-    opacity: 1;
-    cursor: default;
-    transform: scale(1);
-  }
+  
   #about-me-lightbox p {
     color:var(--text);
     text-align: left;
