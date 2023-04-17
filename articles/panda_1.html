@@ -81,21 +81,148 @@
       <p>
         How do you decide where to invest in the short-term while acknowledging
         the uncertainty of the future and the possible pivots you'll have to
-        make? In order to plan work further ahead, we have to make more
-        assumptions about future conditions as the
-        <a href="https://en.wikipedia.org/wiki/Cone_of_Uncertainty"
-          >cone of uncertainty</a
-        >
-        widens.
+        make? And do we really need yet <em>another</em> framework to solve
+        these problems?
+      </p>
+      <h3>The Messy Middle</h3>
+      <p>
+        Let's start at the end. Why do we need another framework at all? The
+        <a href="http://agilemanifesto.org" target="_blank">Agile Manifesto</a>
+        has been around for over 20 years. The
+        <cite>Mythical Man-Month</cite> was published almost 50 years ago.
+        Surely at this point, we've figured this stuff out?
       </p>
       <p>
-        How do you manage the trade-offs between commitments that teams are
-        expected to make, and the fact that we don't have a perfect view of the
-        future.
+        Spending time on almost any organised software development effort
+        quickly proves otherwise. Most teams I have observed suffer from one or
+        more of the following:
+      </p>
+      <ul>
+        <li>too many simultaneous demands</li>
+        <li>insufficient value placed on discovery (product or technical)</li>
+        <li>inadequate prioritisation</li>
+        <li>
+          not enough planned work, leading to reactive development rather than
+          proactive problem solving
+        </li>
+        <li>feedback from customers never reaches the development team</li>
+        <li>
+          no link between the work they are doing and the team or organisation's
+          strategic goals
+        </li>
+        <li>feature delivery is incentivised at the cost of innovation</li>
+      </ul>
+
+      <p>
+        My contention is that the frameworks in use are either too focused on
+        tactics or on a high-level strategy, and too often the link between the
+        two is forgotten.
       </p>
 
+      <p>
+        As a product and engineering leader, I spend a lot of time talking about
+        priorities and trade-offs with other leaders. Most agree that they want
+        autonomous teams empowered to deliver software. Few businesses seem
+        equipped to actually make it happen. The frameworks available are too
+        abstract and the business demands too immediate. As a result, Product
+        Managers either
+      </p>
+      <ul>
+        <li>
+          create waterfall-style product roadmaps, giving the illusion of
+          certainty, or
+        </li>
+        <li>
+          get so caught up in the immediate demands being placed on them that
+          everything becomes urgent.
+        </li>
+      </ul>
+      <p>All too often they end up doing both.</p>
+      <!--Commenting out this paragraph for now. TODO - Decide to keep, remove or move elsewhere in the doc  <p>
+        I created the PandA framework to help ensure that teams are asking the
+        right questions so that they are working on the right things at the
+        right time in the right way. The aim is to bridge the gap between the
+        customer problems that software development efforts contend with and the
+        organisation's shifting strategy and goals.
+      </p>
+      -->
+
+      <h4>The Illusion of Certainty</h4>
+      <div class="flex-appraise">
+        <div class="appraised-image">
+          <figure>
+            <img
+              src="../resources/images/panda/illusion_roadmap.jpg"
+              alt="Traditional feature-driven roadmap"
+              class="large-image clickable-image"
+              id="illusion-roadmap"
+            />
+            <figcaption>Typical feature-driven roadmap</figcaption>
+          </figure>
+          <!--Modal -->
+          <div id="imgModal4" class="modal">
+            <!--close button-->
+            <span class="close" id="close4">&times</span>
+            <!--Modal content (the image)-->
+            <img class="modal-content" id="img04" />
+
+            <!--Modal caption-->
+            <div id="caption4" class="caption"></div>
+          </div>
+          <!--Modal ends-->
+        </div>
+        <div class="panda-container">
+          <p>
+            Where teams have a
+            <a
+              href="https://productschool.com/blog/skills/product-north-star-myfitnesspal-senior-pm"
+              target="_blank"
+              >North Star</a
+            >, there's often not enough structure in place to ensure that the
+            work that they are doing is <strong>aligned</strong> with achieving
+            that goal. A lot of teams either don't have such a metric, or it is
+            poorly defined. Many teams, whether they have one or not, couldn't
+            tell you how the work they are doing is moving the organisation
+            towards achieving it.
+          </p>
+          <p>
+            Organisations consistently struggle with the trade-offs between
+            commitments that teams are expected to make, and the fact that we
+            don't have a perfect view of the future. I often see monolithic
+            roadmaps that pretend absolute certainty about the future. Worse,
+            they will list features to be delivered over problems to be solved
+            and have no way of measuring success.
+          </p>
+        </div>
+      </div>
+      <p>
+        The unintended consequences are that teams don't learn from the outcome
+        of their work, or know when external circumstances have drifted from
+        their assumptions. They just continue to execute against the roadmap,
+        regardless of the value delivered, or what the organisation has learned.
+      </p>
+      <p>
+        Even when the organisation pivots due to missing its numbers or a change
+        in strategy, teams often don't adapt. They just keeps executing against
+        a plan that's no longer fit for purpose.
+      </p>
+
+      <h4 id="section-cone-of-uncertainty">The Cone of Uncertainty</h4>
+
+      <p>
+        This is where the PandA framework comes in. Learning from what we
+        deliver and realigning the team's work with the strategy as we move
+        through the
+        <a
+          href="https://en.wikipedia.org/wiki/Cone_of_Uncertainty"
+          target="_blank"
+          >cone of uncertainty</a
+        >
+        are core to the success of product teams. The PandA framework is built
+        around this idea.
+      </p>
       <!--The cone of uncertainty-->
-      <figure>
+      <figure class="top-margin">
         <img
           src="../resources/images/panda/cone-of-uncertainty.png"
           alt="The cone of uncertainty"
@@ -105,84 +232,236 @@
         <figcaption>The Cone of Uncertainty</figcaption>
       </figure>
     </section>
+    <p>
+      As Objectives and Key Results (OKRs) have become almost universally
+      adopted, I didn't see enough consideration of the different ways we might
+      achieve those objectives while learning and recalibrating along the way. A
+      lot of the time, teams just put the same monolithic roadmap in a different
+      format. Lip service was paid to learning, but the guiding principle of how
+      to most cheaply learn the next most important thing was almost always
+      absent. It wasn't clear how teams could even identify the next most
+      important thing.
+    </p>
+
+    <p>I wanted a roadmap model that would allow me to:</p>
+    <ul>
+      <li>
+        understand the <strong>possible</strong> ways the team could achieve its
+        mission
+      </li>
+      <li>
+        research <strong>potential</strong>
+        <a href="./hypothesis-guide.html">hypotheses</a> and solutions, learning
+        what wouldn't work as cheaply as possible
+      </li>
+      <li>
+        <strong>prioritise</strong> learning based on the testing of these
+        potential hypotheses as well as the evolving needs of the business.
+      </li>
+      <li>
+        enable teams to <strong>promise</strong> delivery against those
+        priorities with a reasonable amount of certainty
+      </li>
+      <li>
+        get teams close to the customer so that they can
+        <strong>appraise</strong> the impact of the work they have done and
+        re-calibrate accordingly
+      </li>
+      <li>
+        consistently check for <strong>alignment</strong> with the
+        organisation's evolving needs and priorities.
+      </li>
+    </ul>
+    <p>
+      So, why another framework? I simply couldn't find one that did all of
+      these things.
+    </p>
+    <aside>
+      WHat's in a name? As I was sketching out the framework, it hit me that
+      every forward-looking stage could start with 'P', while the need for
+      alignment and to ins
+    </aside>
     <section>
       <h3>The PandA Prioritisation Framework</h3>
+      <div class="flex-appraise">
+        <div class="appraised-image">
+          <figure>
+            <img
+              src="../resources/images/panda/Screenshot 2023-03-26 at 16.08.26.png"
+              alt="The PandA framework as a cycle"
+              id="cycle-view1"
+              class="clickable-image"
+            />
+            <figcaption>PandA visualised as a cycle</figcaption>
+          </figure>
+          <!--Modal -->
+          <div id="imgModal5" class="modal">
+            <!--close button-->
+            <span class="close" id="close5">&times</span>
+            <!--Modal content (the image)-->
+            <img class="modal-content" id="img05" />
+
+            <!--Modal caption-->
+            <div id="caption5" class="caption"></div>
+          </div>
+          <!--Modal ends-->
+        </div>
+        <div class="panda-container">
+          <p>
+            The PandA Prioritisation Framework aligns product roadmap and
+            strategy with more immediate goals by dividing the short-term future
+            into a series of stages where work can be
+            <strong>promised</strong> and <strong>prioritised</strong>. Further
+            out, work should be looked at as
+            <strong>potential</strong> hypotheses to test, and as we move into
+            the more distant future, we can think of all the
+            <strong>possibilities</strong> we can deliver through our product.
+          </p>
+          <p>
+            For software that has been released, we
+            <strong>appraise</strong> the impact, and measure it against our
+            original hypotheses. At each stage, we ensure that we are
+            <strong>aligned</strong> with our organisation's broader strategy as
+            it evolves in response to events.
+          </p>
+        </div>
+      </div>
+
       <p>
-        The PandA Prioritisation Framework aligns product roadmap and strategy
-        with more immediate goals. In order to do this, it divides the
-        short-term future into a series of stages where work can be
-        <strong>promised</strong> and <strong>prioritised</strong>. Further out,
-        work should be looked at as <strong>potential</strong> hypotheses to
-        test, and as we move into the more distant future, we think of all the
-        <strong>possibilities</strong> our product has.
+        Teams need clarity on their
+        <a
+          href="https://www.scrum.org/resources/blog/done-understanding-definition-done"
+          target="_blank"
+          >Definition of Done</a
+        >
+        for the work they have promised to do and some insight into the
+        prioritised work that they will do next. Teams will have different
+        requirements based on the amount of uncertainty they are able to manage.
+        I've worked with Kanban teams where they are happy to pivot almost
+        immediately based on shifting priorities and in organisations where
+        quarterly OKRs frame the team's commitments, and these are considered
+        locked-in.
       </p>
       <p>
-        For product that has been released, we <strong>appraise</strong> the
-        impact of the product and measure it against our original hypotheses. At
-        each stage, we ensure that we are <strong>aligned</strong> with our
-        organisation's broader strategy.
+        The further along the cone of uncertainty we look, the more we should be
+        thinking about what we might do, rather than what we are doing or will
+        do. We should be free to think about potential outcomes and test
+        hypotheses based on different possible situations the organisation may
+        face. The PandA framework is designed to provide certainty on near-term
+        work and allow teams to plan flexibly while inspecting their outcomes
+        and checking for pivots in company strategy.
       </p>
     </section>
     <section>
       <h4>Steps in the PandA Framework</h4>
+
       <section class="step">
         <h5>Promised</h5>
+        <h6>What is it?</h6>
         <p>
-          In the current quarter, the team should have agreed what they are
-          expected to deliver, i.e. promised work for release. The team can
-          distill user stories into value that they will create. Product
-          marketing can start to inform customers with confidence of upcoming
-          releases. At this stage, the work is well-defined, and there is a high
-          level of confidence about the solution being delivered.
+          In the current period (sprint/quarter/slice), the team should have
+          agreed what they are expected to deliver, i.e. promised work for
+          release. They may have used t-shirt sizing or some other method to
+          estimate effort. The team can distill user stories into value that
+          they will create, breaking them down into tasks. Product marketing can
+          start to inform customers with confidence of upcoming releases. At
+          this stage, the work is well-defined, and there is a high level of
+          confidence about the solution being delivered. Everyone is aligned and
+          working toward a well-defined user outcome.
+        </p>
+        <h6>How does it work?</h6>
+        <p>
+          This is the paradigm most agile software development teams are working
+          to. Tasks are defined and allocated to the team and executed on within
+          the favoured working method of the team (usually Scrum or Kanban or a
+          mix of the two). The team meets daily to track progress. Work is
+          visualised and moved across a board as it proceeds from
+          <cite>Ready for Development</cite> to <cite>Done</cite>.
         </p>
       </section>
       <section class="step">
         <h5>Prioritised</h5>
+        <h6>What is it?</h6>
         <p>
-          Looking forward to the next quarter, Product Management is clarifying
-          the priorities for delivery. User stories are created, designs begin
-          to take their final shape through workshops involving the whole
-          product team so that as promises are delivered, the next priorities
-          are pulled into the team's orbit and delivery can begin. For all
-          prioritised work, if there are any Preconditions that need to be
-          delivered, e.g. data needs to be delivered by a platform or enabling
-          team, this should be noted and the delivery of this Precondition must
-          be aligned with the promise of the team to deliver the required
-          functionality.
+          Looking forward to the next period/slice, Product Management should be
+          clarifying the priorities for delivery. User stories are created,
+          designs begin to take their final shape through workshops involving
+          the whole product team so that as promises are delivered, the next
+          priorities are pulled into the team's orbit and delivery can begin.
+          For all prioritised work, if there are any Preconditions that need to
+          be delivered, e.g. data needs to be delivered by a platform or
+          enabling team, this should be noted and the delivery of this
+          Precondition must be aligned with the promise of the team to deliver
+          the required functionality.
         </p>
+        <h6>How does it work?</h6>
+        Many teams use workaheads to plan upcoming development effort based on
+        the priorities identified by Product. Others pride themselves on their
+        ability to pivot and define work as late as possible. There's nothing
+        wrong with either of these approaches, and the framework supports both.
+        The important thing is that work is being prioritised at the pace the
+        tean works at, so that they can proceed with confidence. The work that
+        is to be prioritised is pulled from the work done at the
+        <strong>Potential</strong> stage, where hypotheses are tested and
+        assumptions are de-risked.
       </section>
       <section class="step">
         <h5>Potential</h5>
+        <h6>What is it?</h6>
         <p>
-          As we look further into the future, the cone of uncertainty widens. We
-          don't know enough about what will be happening to be definitive about
-          what we should work on. Listening to customers about their needs and
-          how our product meets them (or fails to do so) is essential. Looking
-          this far ahead, we should be forming hypotheses about the future. A
-          well-formed hypothesis should include:
+          This is where the PandA framework really starts to add value. Looking
+          beyond the workahead period, we interrogate what the next best actions
+          we can take <em>might</em> be. As the cone of uncertainty widens, we
+          take account of where the business is, what our current outcomes are
+          telling us, and any research we have to hand.
+        </p>
+        <p>
+          Rather than rigidly planning and ignoring our environment, we take the
+          opportunity to formally test hypotheses for problems we can solve.
+          Team leads meet regularly to discuss hypotheses, understand how best
+          to test them and review product and market research. Customer
+          interviews and experiments can guide us in de-risking our assumptions.
+          Reviewing where the business is and the outcomes achieved by software
+          we have released should inform our next best actions. We use all of
+          these inputs to identify the work we will prioritise.
+        </p>
+
+        <h6>How does it work?</h6>
+        <p>
+          Since we can't be definitive about what we should work on, we hold
+          regular strategy meetings where we discuss:
         </p>
         <ul>
-          <li>the potential solution being considered</li>
-          <li>the target audience</li>
-          <li>the benefits we believe will follow</li>
-          <li>measurable criteria that demonstrate success or failure</li>
+          <li>
+            what our metrics are telling us about the software we have released
+            (see the <a href="#appraised-step">Appraised</a>step)
+          </li>
+          <li>feedback from customer, market and product research</li>
+          <li>hypotheses about how we can move the needle for the product</li>
+          <li>
+            experiments and further research we can use to test these hypotheses
+          </li>
+          <li>
+            results from these experiments and how they inform priorities or the
+            need for further tests
+          </li>
+          <li>
+            the team's focus and how it aligns with the wider product and
+            corporate strategy
+          </li>
+          <li>any pivots the team should make due to organisational factors</li>
         </ul>
-        <aside>
-          We believe that by [creating this solution] for [user persona], we
-          will [deliver this benefit]. We will know we have been successful when
-          [measurable market outcome] has occurred.
-        </aside>
-        <a
-          href="https://medium.com/agileinsider/forming-experimental-product-hypotheses-85b1d41541c4"
-          target="_blank"
-        >
-          <aside class="link-to-external-site-content">
-            Read more about how to create great product hypotheses on Medium.
-          </aside></a
-        >
+        <p>
+          The entire product team should participate in these discussions. This
+          will give the engineers the opportunity to raise any feasibility
+          concerns or the required lead time to build certain capabilities
+          within the application, as well as contributing valuable ideas.
+        </p>
         <p>
           As there are many things we can potentially do, there should be quite
-          a few hypotheses generated. Prioritisation should be driven by:
+          a few hypotheses generated and tested. Hypotheses and test results
+          should be recorded somewhere the team can easily review and learn from
+          them. Prioritisation should be driven by:
         </p>
         <ul>
           <li>understanding our riskiest assumptions</li>
@@ -196,23 +475,15 @@
             payoff
           </li>
         </ul>
+
         <p>
-          We might do this through user interviews, market research, or testing
-          such as A/B testing. We should be having regular strategy meetings and
-          reviewing the evidence uncovered by our research to inform our
-          hypotheses and prioritisation decisions.
-        </p>
-        <p>
-          You should always involve the entire product team in discussions
-          around potential work. This will give the engineers the opportunity to
-          raise any feasibility concerns or the required lead time to build
-          certain capabilities within the application, as well as contributing
-          valuable ideas. These will then inform the work to be prioritised by
-          the team.
+          Experiments should be prioritised alongside product work. These will
+          then inform the work to be prioritised by the team.
         </p>
       </section>
       <section class="step">
         <h5>Possible</h5>
+        <h6>What is it?</h6>
         <p>
           Looking into the far future, say more than 9 - 12 months away, things
           become even less certain. This far out, we should be asking very
@@ -228,10 +499,12 @@
           the application, just like not all the potential ideas will
           necessarily be hypothesised.
         </p>
+        <h6>How does it work?</h6>
       </section>
-      <section class="step">
+      <section class="step" id="appraised-step">
         <h5>Appraised</h5>
-        <p id="alignment-paragraph">
+        <h6>What is it?</h6>
+        <p>
           Once the software has been released (the team has delivered on its
           promises), we need to appraise whether it has had the desired impact.
           We should observe usage of the software in action and measure whether
@@ -244,7 +517,7 @@
         </p>
         <div class="flex-appraise">
           <!--first column of flex-appraise box which contains #appraised-image only and modal-->
-          <div id="appraised-image">
+          <div class="appraised-image">
             <figure>
               <img
                 src="../resources/images/panda/appraised.svg"
@@ -292,9 +565,11 @@
             <!--Modal ends-->
           </div>
         </div>
+        <h6>How does it work?</h6>
       </section>
       <section class="step">
         <h5>Alignment</h5>
+        <h6>What is it?</h6>
         <p>
           Bearing in mind the cone of uncertainty, and everything you don't know
           the further into the future you look, it's important to ensure that
@@ -325,8 +600,9 @@
             Framework as seen with the cone of uncertainty
           </figcaption>
         </figure>
+        <h6>How does it work?</h6>
       </section>
-      <h3>In summary</h3>
+      <h3>So what?</h3>
       <p>
         The PandA framework offers a solution to some of the problems product
         team face when asked to balance the short-term objectives of the
@@ -348,6 +624,8 @@
         sense of direction without being overly prescriptive, while inviting
         team experimentation and discovery.
       </p>
+      <h3>Now what?</h3>
+      Go use it. Let me know how it goes.
     </section>
 
     <footer class="orange">
@@ -381,7 +659,7 @@
 
       var disqus_config = function () {
         this.page.url = "https://octoshark.net/articles/panda_1.html"; // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.identifier = "panda_1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
       (function () {

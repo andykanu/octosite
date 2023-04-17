@@ -155,6 +155,9 @@ figcaption {
   width: 100%;
   height: auto;
 }
+.top-margin {
+  margin-top: 2rem;
+}
 
 /* MODAL (background) */
 .modal {
@@ -180,11 +183,14 @@ figcaption {
 
 .clickable-image  {
   cursor: pointer;
-  transition: 0.5s;
+  
 }
 
 .clickable-image:hover {
   opacity:0.8;
+  filter: brightness(0.9);
+  transform: scale(1.02);
+  transition: 0.7s;
 }
 #cone-of-uncertainty {
   border: none;
@@ -227,7 +233,7 @@ figcaption {
   text-decoration: none;
   cursor: pointer;
   transform: rotate(90deg);
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 
@@ -245,7 +251,7 @@ p {
 }
 
 h1,
-h2, h3 {
+h2, h3, h4, h5, h6 {
   font-family: "Raleway", Sans-Serif;
 }
 
@@ -262,6 +268,11 @@ h4 {
 h5 {
   font-size: 1.15rem;
 }
+h6 {
+  font-size: 1rem;
+  text-decoration: underline;
+  margin: 0;
+}
 
 .contents-heading {
   text-align: center;
@@ -274,8 +285,15 @@ aside {
   padding: 1rem 2rem;
   color: var(--white);
   margin-bottom: -1rem;
+  line-height: 2rem;
  
 }
+
+aside a {
+  color: var(--text);
+  
+}
+
 .above-the-fold p {
   margin-bottom: 2rem;
 }
@@ -416,12 +434,18 @@ em u {
   flex-direction: row-reverse;
   align-items: flex-start;
  }
-#appraised-image {
+.appraised-image {
   width: 40%;
+
 }
 #cycle-view {
   width: 100%;
 }
+
+#cycle-view1 {
+  max-width: 20rem;
+}
+
 .panda-container {
   width: 60%;
 }
@@ -491,7 +515,7 @@ em u {
   .flex-appraise {flex-direction: column-reverse;
 }
 
-#appraised-image, #brainImg {
+.appraised-image, #brainImg, #cycle-view1 {
   width: 80%;
 }
 .grid, #about-me-lightbox {
