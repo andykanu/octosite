@@ -541,7 +541,6 @@ em u {
 .grid, #about-me-lightbox {
   display: grid;
   grid-template-columns: 1fr ;
-
   }
 #about-me-lightbox img {
   display: none;
@@ -551,11 +550,3 @@ em u {
   grid-column-end: 2;
 }
 }
-
-/*Special breakpoint for panda logo 
-@media only screen and (max-width: 70rem) {
-#logo-cell {
-  height: auto;
-}
-}
-*/
