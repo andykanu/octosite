@@ -540,8 +540,10 @@ em u {
   .flex-appraise {flex-direction: column-reverse;
 }
 
-.appraised-image, #brainImg, #cycle-view1 {
-  width: 80%;
+.appraised-image, #brainImg, #imgASteps {
+  width: 100%;
+  height: auto;
+  
 }
 .grid, #about-me-lightbox {
   display: grid;
@@ -553,5 +555,16 @@ em u {
 .first-grid-row {
   grid-column-start: 1;
   grid-column-end: 2;
+}
+.panda-container {
+  width: 100%;
+}
+#p-steps img {
+  
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  
 }
 }
