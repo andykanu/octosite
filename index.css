@@ -432,6 +432,11 @@ em u {
 #logo-cell {
   height: auto; 
   overflow: hidden;
+
+}
+#logo-cell img {
+  filter: none;
+  opacity: 0.9;
 }
 /*LINKS TO EXTERNAL ARTICLES MENTIONED AS BOXES WITHING CONTENT */
 .link-to-external-site-content {
