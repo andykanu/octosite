@@ -141,7 +141,7 @@ nav li {
 /* images settings*/
 
 img {
-  border: 0.25px solid var(--lightgrey);
+  border: 0.0625rem solid var(--lightgrey);
 }
 
 figcaption {
@@ -230,7 +230,7 @@ figcaption {
   transition: 0.3s;
 }
 
-.close:hover, close:focus {
+.close:hover, .close:focus {
   color: var(--lightorange);
   text-decoration: none;
   cursor: pointer;
@@ -272,7 +272,7 @@ h5 {
 }
 h6 {
   font-size: 1rem;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 0;
 }
 
@@ -300,7 +300,7 @@ aside a {
   margin-bottom: 2rem;
 }
 
-.step h5, p, ul, aside {
+.step p, ul, aside, .box-content p {
   margin: 1rem;
 }
 
@@ -338,6 +338,95 @@ br {
   display: flex;
   flex-direction: column;
 }
+
+/*Accordion*/  
+.accordion {
+  margin: 2rem 1rem;
+}
+.accordion input {
+	display: none;
+}
+.box {
+	position: relative;
+	background: white;
+    height: 4rem;
+    transition: all .15s ease-in-out;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -0.0625rem 0 var(--lightgrey),0 0 0.125rem var(--lightgrey),0 0.125rem 0.25rem var(--black);
+}
+header.box {
+	background: var(--orange);
+	z-index: 100;
+	cursor: initial;
+	box-shadow: 0 -0.0625rem 0 var(--lightgrey),0 0 0.125rem -0.125rem var(--lightgrey),0 0.125rem 0.25rem -0.25rem var(--black);
+}
+header .box-title {
+	margin: 0;
+	color: white;
+	cursor: initial;
+}
+.box-title {
+	width: 100%;
+  height: 4rem;
+	line-height: 4rem;
+	padding: 0 1.25rem;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+.box-content {
+	width: 100%;
+	padding: 2rem 1.25rem;
+	display: none;
+}
+.box-close {
+	position: absolute;
+	height: 4rem;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+input:checked + .box {
+	height: auto;
+	margin: 1rem 0;
+    box-shadow: 0 0 0.375rem var(--orange),0 0.375rem 0.75rem var(--orange);
+}
+input:checked + .box .box-title {
+	border-bottom: 0.0625rem solid var(--black);
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+	display: inline-block;
+}
+.arrows section .box-title {
+	padding-left: 3.75rem;
+	width: 100%;
+}
+.arrows section .box-title:before {
+	position: absolute;
+	display: block;
+	content: '\203a';
+	font-size: 1.125rem;
+	left: 1.25rem;
+	top: -0.125rem;
+	transition: transform .15s ease-in-out;
+	
+}
+input:checked + section.box .box-title:before {
+	transform: rotate(90deg);
+}
+
 
 /*Grid for articles sections*/
 .grid {
@@ -427,6 +516,10 @@ em u {
   opacity: 1;
   cursor: default;
   transform: scale(1);
+}
+
+#about-me-lightbox p {
+  text-align: left;
 }
 
 #logo-cell {
