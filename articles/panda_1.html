@@ -48,10 +48,10 @@
     </section>
     <!--Sub-heading-->
     <section>
-      <h2 class="contents-heading">
+      <h2 class="contents-heading welcome-subhead">
         Product teams are expected to deliver on time and innovate, to stay
         aligned and be autonomous, to be accountable for outcomes while being
-        rewarded for output. How do you navigate these often-contradictory
+        rewarded for output. <br /><br />How do you navigate these contradictory
         demands?
       </h2>
     </section>
@@ -85,7 +85,7 @@
       </p>
       <ul>
         <li>too many simultaneous demands</li>
-        <li>insufficient value placed on discovery (product or technical)</li>
+        <li>little value placed on discovery (product or technical)</li>
         <li>inadequate prioritisation</li>
         <li>
           not enough planned work, leading to reactive development rather than
@@ -139,11 +139,11 @@
       </aside>
       <p>
         Product teams often reach for a framework to try to protect themselves.
-        It rarely works. I believe this is because the frameworks in use are too
-        abstract and business demands are too immediate for teams to
-        successfully adopt them. Even where the team can embed them, these
-        frameworks are either too focused on tactics or on a high-level
-        strategy. There is not enough focus on linking the two.
+        It rarely works. The frameworks are usually too abstract and business
+        demands are too immediate for teams to successfully adopt them. Even
+        where the team can embed them, the frameworks are either too focused on
+        tactics or on a high-level strategy. There is not enough focus on
+        linking the two.
       </p>
     </section>
     <section>
@@ -152,7 +152,7 @@
         <div class="appraised-image">
           <figure>
             <img
-              src="../resources/images/panda/illusion_roadmap.jpg"
+              src="../resources/images/panda/illusion_roadmap.svg"
               alt="Traditional feature-driven roadmap"
               class="clickable-image flex-width"
               id="illusion-roadmap"
@@ -331,9 +331,20 @@
       <p>
         To do this, they split the
         <a href="./cone-of-uncertainty.html">Cone of Uncertainty</a> into a
-        number of discrete phases
+        number of discrete phases.
       </p>
     </section>
+    <section>
+      <figure>
+        <img
+          src="../resources/images/panda/panda-of-uncertainty.svg"
+          alt="framework with timeline"
+          class="large-image"
+        />
+        <figcaption>Framework as seen with the cone of uncertainty</figcaption>
+      </figure>
+    </section>
+
     <section>
       <h4>Phases in the PandA Framework</h4>
       <p>
@@ -623,7 +634,8 @@
             <p>
               Teams may use frameworks such as RICE or MoSCoW to help define
               their priorities. Experiments should be prioritised alongside
-              product work.
+              product work. Product marketing can start to inform customers with
+              confidence of what will be included in upcoming releases.
             </p>
           </div>
         </section>
@@ -642,7 +654,10 @@
               priorities, it looks at the results of the testing done on the
               Slack integration and decides to pull that into its backlog. The
               team realises it will need some infrastructure changes and
-              co-ordinates this with the responsible team.
+              co-ordinates this with the responsible team. The team runs some
+              design workshops to step through the required functionality, and
+              creates the user stories it believes will enable the developers to
+              complete the work required.
             </p>
           </div>
         </section>
@@ -660,16 +675,11 @@
           <label class="box-close" for="acc-promised"></label>
           <div class="box-content">
             <p>
-              In the current period (sprint/quarter/slice), the team should have
-              agreed what they are expected to deliver, i.e. promised work for
-              release. They may have used t-shirt sizing or some other method to
-              estimate effort. The team can distill user stories into value that
-              they will create, breaking them down into tasks. Product marketing
-              can start to inform customers with confidence of upcoming
-              releases. At this stage, the work is well-defined, and there is a
-              high level of confidence about the solution being delivered.
-              Everyone is aligned and working toward a well-defined user
-              outcome.
+              In the current period (sprint/quarter/slice, etc.), the team has
+              agreed what problem they are currently trying to solve. They have
+              promised to deliver certain functionality based on the user
+              stories created in its backlog. Everyone is aligned and working
+              toward a well-defined user outcome.
             </p>
           </div>
         </section>
@@ -695,7 +705,12 @@
           <label class="box-title" for="promised-example">For example</label
           ><label class="box-close" for="acc-promised"></label>
           <div class="box-content">
-            <p>TODO</p>
+            <p>
+              The team at P&A Utilities break down the user stories for the
+              Slack integration into tasks. They continue to co-ordinate efforts
+              with other teams as required. At daily standup, they track
+              progress and release the software as it is completed.
+            </p>
           </div>
         </section>
         <input type="radio" name="accordion-promised" id="acc-promised" />
@@ -712,11 +727,10 @@
           <label class="box-close" for="accordion-appraised"></label>
           <div class="box-content">
             <p>
-              Once an increment of software has been released (the team has
-              delivered on its promises), the team needs to appraise whether it
-              has had the desired impact. Too often teams value output over
-              outcomes, releasing software, but never verifying if it delivered
-              value to the customer.
+              Once an increment of software has been released, the team
+              appraises whether it has had the desired impact. Too often teams
+              value output over outcomes, releasing software, but never
+              verifying if it delivered value to the customer.
             </p>
           </div>
         </section>
@@ -729,15 +743,16 @@
               Because the framework is driven by hypotheses, the team knows what
               it expected its released software to achieve. They observe the
               results of customer interaction with the software, by gathering
-              usage data or through user interviews. They then have the data to
-              measure whether they achieved the objectives they set out when
-              creating their hypotheses.
+              usage data or completing user interviews. They then measure
+              whether they achieved the objectives they set out when creating
+              their hypotheses.
             </p>
             <p>
               Whatever is learned from this data is then applied to devising
               further potential work and possibilities for the product. Thus, we
-              can see the framework operates as a cycle based on information and
-              work flow.
+              can see
+              <a href="#cycle-view">the framework operates as a cycle </a>based
+              on information and work flow.
             </p>
           </div>
         </section>
@@ -747,7 +762,23 @@
           <label class="box-title" for="appraised-example">For example</label
           ><label class="box-close" for="acc-appraised"></label>
           <div class="box-content">
-            <p>TODO</p>
+            <p>
+              Once the Slack integration is delivered, the team measures its
+              impact. Their hypothesis was that this would result in a 10%
+              uplift in users taking action in response to alerts, and that
+              customers would see $10 million cost savings in the following six
+              months.
+            </p>
+            <p>
+              Observing user behaviour, the team sees that there i a 15% uplift
+              in users taking action. However, this results in a cost saving of
+              only $2 million for their customers on their energy bills. The
+              team inspects this data and forms a new hypothesis that the
+              algorithm generating the alerts requires improving as it is not
+              creating enough high-value alerts. This hypothesis will be
+              reviewed and work completed as the team considers further
+              <strong>potential</strong> work.
+            </p>
           </div>
         </section>
         <input type="radio" name="accordion-appraised" id="acc-appraised" />
@@ -763,49 +794,14 @@
         <figcaption>PandA visualised as a cycle</figcaption>
       </figure>
 
-      <section class="step">
-        <h5>Alignment</h5>
-        <h6>What is it?</h6>
-        <p>
-          Bearing in mind the cone of uncertainty, and everything we don't know
-          the further into the future we look, it's important to ensure that
-          teams constantly check the alignment of their potential outcomes with
-          their product and business strategy.
-        </p>
-        <h6>How does it work?</h6>
-        <p>
-          In the short-term (promises and priorities) should be aligned with
-          Objectives and Key Results (OKRs), Key Performance Indicators (KPIs)
-          or the planning framework in use by the organisation. Possibilities
-          and potential work should be checked for alignment with the business
-          strategy as teams work on them and bring them to full definition. This
-          ensures that the team have early warning signals if they need to
-          course-correct.
-        </p>
-        <figure>
-          <img
-            src="../resources/images/panda/panda-of-uncertainty.svg"
-            alt="framework with timeline"
-            class="large-image"
-          />
-          <figcaption>
-            Framework as seen with the cone of uncertainty
-          </figcaption>
-        </figure>
-      </section>
-      <!--      <h2>A Worked Example</h2>
-        -->
-
-      <h3>So do we need another framework?</h3>
+      <h3>So, What's In It For You?</h3>
       <p>
-        The PandA framework offers a solution to some of the problems product
-        team face when asked to balance the short-term objectives of the
-        organisation with longer-term goals and the uncertainties inherent in
-        software development. The goal of the framework is to ensure alignment
-        of outcomes with strategy. It's a lightweight framework, bridging the
-        tactical and strategic gaps that often exist between execution and
-        business strategy. I think it has the potential to ease some of the pain
-        software development teams currently experience.
+        The PandA framework offers a way to balance the short-term objectives of
+        the organisation with longer-term goals and the uncertainties inherent
+        in software development. The goal of the framework is to ensure
+        alignment of outcomes with strategy. It's a lightweight framework,
+        bridging the tactical and strategic gaps that often exist between
+        execution and business strategy.
       </p>
 
       <p>Using the framework will enable teams to</p>
@@ -819,24 +815,12 @@
       <p>
         The framework enables teams to create and own a roadmap that gives a
         sense of direction without being overly prescriptive, while inviting
-        team experimentation and discovery.
+        team experimentation and discovery. It's a less painful way of thinking
+        about software development. My hope is it can add some value to your
+        organisation and improve your outcomes. Give it a try. Let me know how
+        it goes.
       </p>
-
-      <p>
-        In the short-term (promises and priorities) should be aligned with
-        Objectives and Key Results (OKRs), Key Performance Indicators (KPIs) or
-        the planning framework in use by the organisation. Possibilities and
-        potential work should be checked for alignment with the business
-        strategy as teams work on them and bring them to full definition. This
-        ensures that the team have early warning signals if they need to
-        course-correct.
-      </p>
-
-      <h3>Now what?</h3>
-      This is a starting point. I will evolve the framework and will be creating
-      a worked example. If you like it, go use it. Let me know how it goes.
     </section>
-
     <!--FOOTER-->
     <footer class="orange">
       <div>
