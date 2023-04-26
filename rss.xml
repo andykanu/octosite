@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Octoshark</title>
+<description>The Octoshark Blog</description>
+<link>http://octoshark.net</link>
+<atom:link href="http://alexanderle.com/rss.xml"
+     rel="self" type="application/rss+xml" />
+
+
+<item>
+<title>PandA: A framework for Product Strategy</title>
+<link>http://octoshark.net/articles/panda_1.html</link>
+<guid>http://octoshark.net/articles/panda_1.html</guid>
+<pubDate>Wed, 26 Apr 2023 00:00:00 GMT</pubDate>
+</item>
+
+<item>
+<title>The Cone of Uncertainty</title>
+<link>http://octoshark.net/articles/cone-of-uncertainty.html</link>
+<guid>http://octoshark.net/articles/cone-of-uncertainty.html</guid>
+<pubDate>Tue, 25 Apr 2023 00:00:00 GMT</pubDate>
+
+</item>
+
+<item>
+<title>RTO Speedwagon</title>
+<link>http://octoshark.net/articles/rto-speedwagon.html</link>
+<pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
+
+</item>
+
+<item>
+<title>Winning Calendar Tetris</title>
+<link>http://octoshark.net/articles/tetris.html</link>
+<guid>http://octoshark.net/articles/tetris.html</guid>
+<pubDate>Sat, 15 Apr 2023 00:00:00 GMT</pubDate>
+
+</item>
+
+<item>
+<title>A short guide to hypotheses</title>
+<link>http://octoshark.net/articles/hypothesis-guide.html</link>
+<guid>http://octoshark.net/articles/hypothesis-guide.html</guid>
+<pubDate>Tue, 11 Apr 2023 00:00:00 GMT</pubDate>
+
+</item>
+
+
+</channel>  
+</rss>
