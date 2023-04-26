@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../resources/images/navbarLogo.png"
+    />
+    <title>Cone of Uncertainty</title>
+  </head>
+  <body>
+    <!--Site header-->
+    <header>
+      <!--Navigation bar-->
+      <nav class="navOtherPages">
+        <ul class="orange">
+          <li id="navLogo">
+            <a href="../index.html"
+              ><img src="../resources/images/navbarLogo.png" class="stickyLogo"
+            /></a>
+          </li>
+          <li id="navHomeIcon">
+            <a href="../index.html"
+              ><img src="../resources/images/Homeicon.png" class="home-icon"
+            /></a>
+          </li>
+          <li>
+            <a href="../about.html" class="nav-link"><strong>About</strong></a>
+          </li>
+          <li>
+            <a href="../article-index.html" class="nav-link"
+              ><strong>Articles</strong></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Page title-->
+    <section class="titleOther">
+      <h1>The Cone of Uncertainty</h1>
+    </section>
+    <!--Sub-heading-->
+    <section>
+      <h2 class="contents-heading">
+        What's the cone of uncertainty and how can we use it?
+      </h2>
+      <!--Main content-->
+      <figure>
+        <img
+          src="../resources/images/panda/cone-of-uncertainty.png"
+          alt="Cone of Uncertainty"
+          class="large-image"
+        />
+        <figcaption>The Cone of Uncertainty</figcaption>
+      </figure>
+
+      <h3>What Is It?</h3>
+      <p>
+        The Cone of Uncertainty is a way of visualising the range of outcomes
+        that can occur. It makes it clear that uncertainty is inherent in
+        software development.
+      </p>
+      <p>
+        In the near-term, we can be reasonably confident about the range of
+        outcomes and risk we face. The further into the future we look, the less
+        inherent certainty we have.
+      </p>
+      <p>
+        We try to manage this uncertainty by dividing work into small slices. In
+        Scrum teams, this is done within sprints. In Kanban, teams will take
+        small slices of work at a time so that they can iterate and learn as
+        they proceed towards a goal. Breaking the user value we are trying to
+        deliver into smaller steps enables us to make adjustments or pivots as
+        new information becomes available.
+      </p>
+
+      <h4>The Cone of Uncertainty & PandA</h4>
+      <p>
+        The stages of the PandA framework can be mapped onto the Cone of
+        Uncertainty.
+      </p>
+      <figure>
+        <img
+          src="../resources/images/panda/panda-of-uncertainty.svg"
+          alt="framework with timeline"
+          class="large-image"
+        />
+        <figcaption>Framework as seen with the cone of uncertainty</figcaption>
+      </figure>
+      <ul>
+        <li>
+          The Appraised step relates to released software, so there is no
+          uncertainty. Here the team measures the impact of the software it has
+          delivered.
+        </li>
+        <li>
+          Promised work is the work being completed by the team in the current
+          increment or sprint. The team knows what it is working on with a clear
+          view of what it is aiming to learn.
+        </li>
+        <li>
+          Prioritised work relates to what's coming next. Product, Design and
+          Engineering have co-operated to identify what the next best hypotheses
+          to test are. This gives the team of upcoming work and the key
+          assumptions being made that need to be de-risked.
+        </li>
+        <li>
+          The potential step refers to work that the team might take on in a few
+          months' time. The team should be forming hypotheses about what they
+          might do, acknowledging the large amounts of uncertainty about what
+          the environment will be by the time we
+        </li>
+        <li>
+          Looking even further ahead, the team records the possibilities they
+          may look at in the far future. This will help to inform what the
+          strategy should be as we move forward.
+        </li>
+      </ul>
+      <h3>In Summary</h3>
+      <p>
+        The Cone of Uncertainty is a useful visual tool that demonstrates that
+        software development teams are in the risk management business. PandA
+        enables teams to view their roadmap leveraging this knowledge about
+        future uncertainty.
+      </p>
+    </section>
+
+    <footer class="orange">
+      <div>
+        <a href="https://twitter.com/iamakeogh" target="_blank"
+          ><img
+            src="../resources/images/Twitter social icons - rounded square - blue.png"
+            class="logo"
+            alt="Follow me on Twitter"
+        /></a>
+        <a href="https://github.com/andykanu?tab=repositories" target="_blank"
+          ><img
+            src="../resources/images/GitHub-Mark-Light-120px-plus.png"
+            alt="Github logo"
+            class="logo"
+        /></a>
+        <a href="https://www.linkedin.com/in/andrew-keogh-ie/" target="_blank"
+          ><img
+            src="../resources/images/LI-In-Bug.png"
+            alt="LinkedIn logo"
+            class="logo"
+        /></a>
+      </div>
+      <div class="copyright" id="orange">&copy; 2023 Octoshark Ltd</div>
+    </footer>
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+      var disqus_config = function () {
+        this.page.url =
+          "https://octoshark.net/articles/cone-of-uncertainty.html"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "cone-of-uncertainty"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://octoshark.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript
+      >Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+      ></noscript
+    >
+  </body>
+  <script src="../resources/scripts/articleLevelWhiteHomeIcon.js"></script>
+</html>
