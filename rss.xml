@@ -4,7 +4,7 @@
 <title>Octoshark</title>
 <description>The Octoshark Blog</description>
 <link>http://octoshark.net</link>
-<atom:link href="http://alexanderle.com/rss.xml"
+<atom:link href="http://octoshark.net/rss.xml"
      rel="self" type="application/rss+xml" />
 
 
@@ -26,6 +26,8 @@
 <item>
 <title>RTO Speedwagon</title>
 <link>http://octoshark.net/articles/rto-speedwagon.html</link>
+<guid>http://octoshark.net/articles/rto-speedwagon.html</guid>
+
 <pubDate>Thu, 20 Apr 2023 00:00:00 GMT</pubDate>
 
 </item>
