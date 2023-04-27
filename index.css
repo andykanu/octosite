@@ -555,10 +555,9 @@ em u {
   width: 40%;
 
 }
-#cycle-view {
-  width: 100%;
+#flex-illusion-roadmap {
+  align-items: center;
 }
-
 .flex-width {
   max-width: 20rem;
 }
