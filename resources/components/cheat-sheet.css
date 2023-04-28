@@ -21,6 +21,7 @@
 .cheat-sheet {
   text-align: center;
   border: 0.062rem solid var(--grey);
+  min-width: 50%;
   max-width: 70%;
   margin: 0 auto;
   border-collapse: collapse;
@@ -50,6 +51,9 @@
 
 .lastcol {
   width: 65%;
+}
+.evencol {
+  width: 50%;
 }
 
 #basedOn {
