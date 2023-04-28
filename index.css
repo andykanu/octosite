@@ -577,6 +577,12 @@ em u {
   max-width: 100rem;
 }
 
+.you-tube {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 /*Desktop styles specifically*/
 @media screen and (min-width: 50rem) {
