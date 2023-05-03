@@ -249,7 +249,7 @@ h1 {
 h2,h3,
 p {
   color: var(--text);
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 h1,
@@ -297,12 +297,16 @@ aside a {
   
 }
 
+li {
+  line-height: 2rem;
+}
+
 .above-the-fold p {
   margin-bottom: 2rem;
 }
 
-.step p, ul, aside, .box-content p {
-  margin: 1rem;
+aside, .box-content p {
+  margin: 1rem 0;
 }
 
 /* FOOTER */
