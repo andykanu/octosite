@@ -294,7 +294,8 @@ aside {
 
 aside a {
   color: var(--text);
-  
+  text-decoration: none;
+  font-style: italic;
 }
 
 li {
