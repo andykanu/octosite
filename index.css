@@ -249,7 +249,7 @@ h1 {
 h2,h3,
 p {
   color: var(--text);
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
 }
 
 h1,
@@ -294,15 +294,20 @@ aside {
 
 aside a {
   color: var(--text);
-  
+  text-decoration: none;
+  font-style: italic;
+}
+
+li {
+  line-height: 2rem;
 }
 
 .above-the-fold p {
   margin-bottom: 2rem;
 }
 
-.step p, ul, aside, .box-content p {
-  margin: 1rem;
+aside, .box-content p {
+  margin: 1rem 0;
 }
 
 /* FOOTER */
@@ -633,6 +638,7 @@ em u {
 
 /*modal content and flex content on smaller screens */
 @media only screen and (max-width: 54rem) {
+  body {width: 90%;}
   .modal-content {width: 100%;}
   .flex-appraise {flex-direction: column-reverse;
 }
