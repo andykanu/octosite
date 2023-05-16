@@ -50,7 +50,7 @@ a {
   color: var(--link);
   margin: 0;
   text-decoration-line: underline;
-  text-decoration-style: dashed;  
+  text-decoration-style: solid;  
  
 }
 
