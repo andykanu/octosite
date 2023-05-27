@@ -288,7 +288,6 @@ aside {
   padding: 1rem 2rem;
   color: var(--white);
   margin-bottom: -1rem;
-  line-height: 2rem;
  
 }
 
@@ -298,7 +297,7 @@ aside a {
   font-style: italic;
 }
 
-li {
+aside, p, li {
   line-height: 2rem;
 }
 
@@ -566,7 +565,9 @@ em u {
 .flex-width {
   max-width: 20rem;
 }
-
+.fifty-percent {
+width: 50%;
+}
 .panda-container {
   width: 60%;
 }
@@ -643,7 +644,7 @@ em u {
   .flex-appraise {flex-direction: column-reverse;
 }
 
-.appraised-image, #brainImg, #imgASteps {
+.appraised-image, .fifty-percent, #brainImg, #imgASteps {
   width: 100%;
   height: auto;
   
