@@ -157,8 +157,13 @@
       </p>
       <p>
         The DORA metrics were developed by Dr. Nicole Forsgren, Jez Humble, and
-        Gene Kim. I first came across them when reading their book ‘Accelerate’
-        (LINK) a few years ago. The group publishes the
+        Gene Kim. I first came across them when reading their book
+        <a
+          href="https://www.amazon.co.uk/Accelerate-Software-Performing-Technology-Organizations-ebook/dp/B07B9F83WM/"
+          target="_blank"
+          >Accelerate</a
+        >
+        a few years ago. The group publishes the
         <a
           href="https://cloud.google.com/devops/state-of-devops"
           target="_blank"
@@ -166,123 +171,217 @@
         >
         report each year.
       </p>
+      <p>
+        The DORA metrics have four core measures of developer productivity, all
+        focused on quantitative metrics
+      </p>
       <ul>
         <li>
-          <strong>Comparability</strong>: it must demonstrate progress, e.g. a
-          5% increase in conversions since last month is more useful than 2%
-          conversion
+          <strong>Delivery lead time</strong>: the amount of time it takes for a
+          commit to reach a customer
         </li>
         <li>
-          <strong>Understandability</strong>: a metric must be easily
-          understandable by everyone in the organisation
+          <strong>Deployment frequency</strong>: how frequently the team
+          releases software to production
         </li>
         <li>
-          <strong>Ratios</strong>: the most useful metrics are ratios rather
-          than numerical.
+          <strong>Mean time to recover (MTTR)</strong>: the amount of time it
+          takes to respond to a service incident
         </li>
         <li>
-          <strong>Behavioural</strong>: a good ratio tracks customer behaviour
-          but also will challenge the organisation’s behaviour
+          <strong>Change failure rate</strong>: the % of deployments that result
+          in a service incident or outage
         </li>
       </ul>
       <p>
-        For me, organisational metrics must be based in customer outcomes and
-        should be stated as ratios. It’s important to watch out for
-        <a
-          href="(https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/)
-        "
-          target="_blank"
-          >vanity metrics</a
-        >
-        (e.g. number of clicks) which may make you feel good about yourself, but
-        don’t offer any insight into customer behaviour or action you can take
-        which will impact it. A related symptom of vanity metrics is overhyping
-        internal measures of success (e.g. revenue) at the expense of customer
-        outcomes.
+        The first two of these measures help give insights into the team’s
+        efficiency. The latter two offer insights into the stability of its
+        software.
       </p>
       <p>
-        Vanity metrics being emphasised as the highest-order problems detract
-        from the mission of the company. A loss of perspective on who your
-        customer is and what they need can lead to an organisation losing its
-        way and ultimately failing,
-        <a
-          href="https://d3.harvard.edu/platform-digit/submission/quirky-the-failure-of-invention-crowdsourcing/"
-          target="_blank"
-          >as happened to crowdsourcing innovation startup Quirky in 2015.</a
-        >
+        In 2021, the DORA team extended DORA to look at Reliability as a
+        standalone measure. Before this, reliability was assessed using MTTR and
+        Change Failure Rate. Reliability is now defined separately as a measure
+        for how well the software meets user expectations, using availability
+        and performance as proxy measures.
       </p>
-      <aside>
-        “If you measure something and it’s not attached to a goal, in turn
-        changing your behaviour, you’re wasting your time”
-        <a
-          href="https://www.amazon.co.uk/Lean-Analytics-Better-Startup-Faster-ebook/dp/B00AG66LTM/"
-          target="_blank"
-        >
-          Alistair Croll and Benjamin Yoskovitz, Lean Analytics</a
-        >
-      </aside>
+      <figure>
+        <img
+          src="../resources/images/metrics/Screenshot 2023-05-12 at 22.09.59.png"
+          class="large-image"
+          alt="DORA metrics"
+        />
+        <figcaption>
+          Dora Metrics. Source:
+          <a
+            href="https://cloud.google.com/devops/state-of-devops/"
+            target="_blank"
+            >Google State of DevOps Report 2022</a
+          >
+        </figcaption>
+      </figure>
       <p>
-        In the same book, Croll and Yoskovitz also introduce the concept of the
-        One Metric That Matters (OMTM). What’s the one thing that you can
-        measure that will tell you that you are on track to achieve your desired
-        outcome? The discipline of being guided by what’s essential is important
-        here. There are many things you can track. Recording and reviewing
-        different measures is easier than ever with developer tooling and
-        analytics software. But what really moves the needle?
-      </p>
-
-      <h3>There Can’t Be Only One?</h3>
-      <p>
-        I’m not convinced there is only one metric that matters in all
-        situations. For example in a
-        <a href="https://en.wikipedia.org/wiki/Two-sided_market" target="_blank"
-          >two-sided marketplace</a
-        >, you’re likely to need a metric for each side of the market. Equally,
-        there are other businesses that may need to consider more than one
-        outcome per product area. Don’t get caught up in there only being one,
-        but you should value an extremely low number of metrics above all
-        others. I would say three is the absolute limit. This isn’t to say that
-        you should only measure three things, but you need to make a decision in
-        advance about what few things really matter to you. What change in
-        customer behaviour do you need to drive, and how do you know it’s been
-        accomplished?
+        To achieve a short delivery lead time and a high level of deployment
+        frequency, high-performing teams divide their work into thin slices,
+        delivering small incremental code changes frequently. By delivering
+        small changes frequently, the teams manage deployment risk effectively.
+        They have few, if any, outages, and can recover quickly in the case of a
+        production issue.
       </p>
       <p>
-        For example, I once worked on a product which had consistent traffic,
-        but only a 9% conversion rate. In this case, conversion was considered
-        to be a customer creating an account AND taking further action. By
-        focusing on removing frictions in the account creation flow, the team
-        increased the conversion rate to over 25% and it stayed there, even as
-        the number of unique visitors didn’t change a great deal over time. If
-        we had focused on increasing site visits, we would never have solved for
-        adoption.
+        Nothing will make your organisation faster than reducing batch size.
       </p>
-      <aside>
-        “Capture everything, but focus on what's important.”
-        <a
-          href="https://www.amazon.co.uk/Lean-Analytics-Better-Startup-Faster-ebook/dp/B00AG66LTM/"
-          target="_blank"
-        >
-          Alistair Croll and Benjamin Yoskovitz, Lean Analytics</a
-        >
-      </aside>
-      <h3>What About Internal Measures?</h3>
       <p>
-        Nobody would argue that you shouldn’t also measure what happens in
-        product development. There are
-        <a
-          href="https://cloud.google.com/devops/state-of-devops/"
-          target="_blank"
-        >
-          key metrics</a
-        >
-        you can use as an organisation that will give you insights into the
-        health of your product development process. You absolutely should care
-        about developer productivity, but prizing predictability, features and
-        outputs over delivery, solutions and impacts is misguided. The metrics
-        that matter are about what drives customer experience and actions we can
-        take to improve it.
+        Delivery lead time can be defined in different ways. Some organisations
+        use it to measure the time elapsed between a customer request and a
+        change in production. Others measure from when a commit hits a
+        production system to when that change gets deployed to a customer. Still
+        others measure from when a commit is made in a lower, development
+        environment to when it is released to production.
       </p>
+      <p>
+        There are pros and cons to each of these approaches. I would say that
+        the most appropriate one varies by organisation and by scenario rather
+        than there being a hard and fast rule.
+      </p>
+      <p>
+        In an environment with a high level of automation test coverage and full
+        CI/CD, measuring the time from code commit in a lower environment to
+        production release may be beneficial. In less mature environments, it
+        may be valuable to step back and look at the entire value stream
+        end-to-end, thus measuring the time from idea to adoption. Value stream
+        mapping is a fantastic exercise for finding and fixing wrinkles in the
+        ideation, development and deployment processes of an organisation. Value
+        stream mapping is strongly recommended if you lack insights into parts
+        of the development process, or where there are issues that prevent rapid
+        deployment of software.
+      </p>
+      <h3>Heading for SPACE</h3>
+      <p>
+        Dr Nicola Forsgren was also involved in the creation of
+        <a href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank"
+          >the SPACE framework</a
+        >
+        in 2021. SPACE expands the lens through which organisations can measure
+        developer productivity, including broader measures of the health of
+        their software development practices.
+      </p>
+      <p>
+        SPACE introduces qualitative measures that enhance the quantitative
+        focus of DORA metrics, including developer perception of teamwork, their
+        own productivity and job satisfaction.
+      </p>
+      <p>SPACE measures five dimensions of Developer Productivity:</p>
+      <ul>
+        <li>
+          <strong>Satisfaction and wellbeing</strong>, measuring fulfilment and
+          happiness at work. This is usually captured via survey data on
+          employee satisfaction, tooling efficacy and factors leading to or
+          relating to burnout.
+        </li>
+        <li>
+          <strong>Performance:</strong> did the software achieve the desired
+          outcome? This can be measured through usage, customer satisfaction
+          surveys, customer adoption, incidence of bugs or failures, etc.
+        </li>
+        <li>
+          <strong>Activity:</strong> while it’s important not to conflate
+          activity with productivity, some indications of developer activity can
+          be useful when used in conjunction with the other measures, e.g.,
+          number of pull requests, number of bugs created, contributions to
+          documentation and design specs, use of CI/CD, etc.
+        </li>
+        <li>
+          <strong>Communication and Collaboration:</strong> Effective teams rely
+          on each other so that the entire team can succeed. Teams with stronger
+          communication patterns and higher levels of alignment are more likely
+          to be successful. Metrics that can be used to measure communication
+          and collaboration include the volume and discoverability of technical
+          documentation, the speed at which work can be integrated, onboarding
+          time for new members, and the quality of reviews completed.
+          Organisational network analysis can reveal the links and strength of
+          the relationships within and between teams.
+        </li>
+        <li>
+          <strong>Efficiency and Flow:</strong> Minimising delays and handoffs
+          will increase developer productivity. Measures here include how easily
+          can developers move code through the value stream the levels of
+          interruptions do they face.
+        </li>
+      </ul>
+      <figure>
+        <img
+          src="../resources/images/metrics/forsgren1.svg"
+          alt="SPACE framework"
+          class="large-image"
+        />
+        <figcaption>
+          Sample SPACE metrics. Source:
+          <a href="https://queue.acm.org/detail.cfm?id=3454124" target="_blank"
+            >The SPACE of Developer Productivity</a
+          >
+        </figcaption>
+      </figure>
+      <h3>A New Hope?</h3>
+      <p>
+        Earlier this month, the team behind SPACE returned with
+        <a href="https://queue.acm.org/detail.cfm?id=3595878" target="_blank"
+          >an updated view of what drives developer productivity</a
+        >, recommending a developer-centric approach focused on developer
+        experience (DevEx). They recommend homing in on the lived experience of
+        developers and removing the frictions or barriers to flow experienced by
+        engineers.
+      </p>
+      <figure>
+        <img
+          src="../resources/images/metrics/3elementsDX.svg"
+          alt="Elements of DevEx"
+          class="large-image"
+        />
+        <figcaption>
+          The three elements of Developer Experience. Source:
+          <a href="https://queue.acm.org/detail.cfm?id=3595878" target="_blank"
+            >DevEx: What Actually Drives Productivity</a
+          >
+        </figcaption>
+      </figure>
+      <p>
+        As with SPACE, the framework looks beyond quantitative measures and
+        tools to inspect issues that impact developers in the round, such as
+        psychological safety and having clear goals. Companies with high-quality
+        work environments are more productive than those with poor DevEx. They
+        recommend using survey data to measure developer perception and
+        experience in three key areas:
+      </p>
+      <ul>
+        <li>
+          <strong>Flow state</strong>: Flow occurs when developers are working
+          on tasks that require controlled attention (LINK) without
+          interruption. Reducing meetings and ensuring developers have blocked
+          off non-interruptible time can help deliver a flow state.
+        </li>
+        <li>
+          <strong>Feedback loops</strong>: Shortening feedback loops enhances
+          developer experience. We already know that small batch sizes are
+          beneficial for managing software development as it increases the
+          frequency of customer feedback. DevEx goes beyond this, looking at
+          ways of speeding up code reviews and testing so that developers
+          receive feedback on their work as quickly as possible throughout the
+          development process.
+        </li>
+        <li>
+          <strong
+            ><a
+              href="https://www.interaction-design.org/literature/topics/cognitive-load"
+              target="_blank"
+              >Cognitive load</a
+            ></strong
+          >: Reducing switching costs and enabling developers to reach a flow
+          state when working has a real impact on developer productivity. By
+          reducing task complexity and cognitive load, organisations can free
+          developers to do their best work.
+        </li>
+      </ul>
     </section>
 
     <footer class="orange">
