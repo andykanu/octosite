@@ -313,6 +313,7 @@ aside, .box-content p {
   text-align: right;
   font-size: 0.8rem;
 }
+
 /* FOOTER */
 
 footer {
@@ -483,7 +484,7 @@ input:checked + section.box .box-title:before {
 }
 
 .lightbox p,
-.lightbox h2, .lightbox p a {
+.lightbox h3, .lightbox p a {
   margin: 0.5rem;
   text-decoration: none;
   color: var(--white);
