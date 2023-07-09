@@ -309,14 +309,18 @@ aside, .box-content p {
   margin: 1rem 0;
 }
 
+.updated-note {
+  text-align: right;
+  font-size: 0.8rem;
+}
 /* FOOTER */
 
 footer {
-  margin: 2rem;
+  margin: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   height: 3rem;
 }
 
