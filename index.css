@@ -18,7 +18,7 @@
 
 html {
   font-size: 1rem;
-  font-family: 'ManixSansHLRegular'
+  font-family: "Raleway", sans-serif;
 }
 body {
   margin: 0 auto;
@@ -274,7 +274,7 @@ h6 {
 .contents-heading {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: "InterHLThinBETA";
+  font-family: Verdana, Tahoma, sans-serif;
 }
 .welcome-subhead {
 margin-top: -1rem;
